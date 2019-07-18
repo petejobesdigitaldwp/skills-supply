@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Examine a place | GOV.UK Prototype Kit
+  Where would you like to find out about? | Explore the digital skills market by area
 {% endblock %}
 
 {% block content %}
@@ -11,13 +11,21 @@
   tag: {
     text: "alpha"
   },
-  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  html: 'This is a new service – your feedback will help us to improve it.'
 }) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      Home
+    </li>
+  </ol>
+</div>
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-      <form method="post" class="form">
+      <form method="post" class="form" action="/version-1-2/lep-ne">
 
         <fieldset class="govuk-fieldset" id="where_fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
@@ -25,7 +33,7 @@
             Where would you like to find out about?
             </h1>
           </legend> 
-          <span class="govuk-hint">You can search for a local enterprise partnership or a local authority.</span>
+          <span class="govuk-hint">You can search for a region, a local enterprise partnership or a local authority district.</span>
           <div class="govuk-form-group">
             <div id="autocomplete"></div>
           </div>
@@ -38,6 +46,10 @@
      
   </div>
 </div>
+
+</div>
+
+{% include "includes/feedback.html" %}
 
 {% endblock %}
 
