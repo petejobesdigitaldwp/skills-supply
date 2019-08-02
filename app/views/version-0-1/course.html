@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Course title | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Course title
+      </h1>
+    <p class="govuk-body-l">
+      This will be a short summary of the course and what it is about.
+    </p>
+  </div>
+</div>
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+
+
+{% endblock %}

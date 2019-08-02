@@ -1,8 +1,7 @@
-
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Explore the digital skills market by area
+Find data on skills supply
 {% endblock %}
 
 {% block content %}
@@ -17,21 +16,21 @@ Explore the digital skills market by area
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-          Explore the digital skills market by area
+        Find data on skills supply
       </h1>
       <p class="govuk-body-l">
-          This service lets you view information about digital skills demand in a specific area.
+          This service lets you view information about skills supply in a specific area.
       </p>
       <p>You can explore data about:</p>
           <ul class="govuk-list govuk-list--bullet">
-            <li>skills with the highest employer demand</li>
-            <li>roles with the highest employer demand</li>
-            <li>changes in employer demand</li>
+            <li>training providers</li>
+            <li>courses</li>
+            <li>training available by area</li>
           </ul>
 
       {{ govukButton({
         text: "Start now",
-        href: "sign-in",
+        href: "what",
         classes: "govuk-button--start"
     }) }}
 

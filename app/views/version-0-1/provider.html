@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Provider name | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+        Provider name
+      </h1>
+      <span class="govuk-caption-xl govuk-!-margin-bottom-8">Further education college</span>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <h2 class="govuk-heading-l">Details</h2>
+      <p>123 Street Road<br />The town<br />County name<br />POST CODE</p>
+      <p><strong>Telephone:</strong> 01234 567890</p>
+      <p><strong>Website:</strong> <a href="#">http://www.website.com</a></p>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-l">Courses offered</h2>
+      </div>
+  </div>
+
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+
+
+{% endblock %}

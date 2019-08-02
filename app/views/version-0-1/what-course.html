@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Where would you like to find out about? | Find data on skills supply
+  What course would you like to find out about? | Find data on skills supply
 {% endblock %}
 
 {% block content %}
@@ -19,15 +19,14 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-      <form method="post" class="form" action="place">
+      <form method="post" class="form" action="course">
 
         <fieldset class="govuk-fieldset" id="where_fieldset">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
             <h1 class="govuk-fieldset__heading">
-            Where would you like to find out about?
+            What course would you like to find out about?
             </h1>
           </legend> 
-          <span class="govuk-hint">You can search for a region, a local enterprise partnership or a local authority district.</span>
           <div class="govuk-form-group">
             <div id="autocomplete"></div>
           </div>
