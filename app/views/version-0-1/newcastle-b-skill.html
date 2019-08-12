@@ -1,0 +1,154 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+B-SKILL Limited | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-xl">Training provider</span>
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+          B-SKILL Limited in Newcastle upon Tyne
+      </h1>
+      <span class="govuk-caption-m govuk-!-margin-bottom-4">Private work-based</span>
+    </div>
+  </div>
+  
+  <div class="govuk-grid-row govuk-!-margin-bottom-8">
+        <div class="govuk-grid-column-one-quarter">
+            <div class="headline-stat-box section-border-top">
+                <span class="title">Number of students</span>
+                <span class="figure">50</span>
+                <div class="detail govuk-body-s">
+                   Based on National Achievement Rates Tables, 2018
+                </div>
+            </div>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+            <div class="headline-stat-box section-border-top">
+                <span class="title">Retention rate</span>
+                <span class="figure">97.8%</span>
+                <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                  The percentage of people completing their course.
+              </div>
+    
+            </div>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+            <div class="headline-stat-box section-border-top">
+                <span class="title">Pass rate</span>
+                <span class="figure">97.8%</span>
+                <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                  The percentage of people completing their course with a pass.
+                </div>
+            </div>
+        </div>
+        <div class="govuk-grid-column-one-quarter">
+          <div class="headline-stat-box section-border-top">
+              <span class="title">Achievement rate</span>
+              <span class="figure">100%</span>
+              <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                The percentage of people leaving having achieved their learning goals.
+            </div>
+    
+          </div>
+      </div>
+  
+    </div>
+
+
+  <div class="govuk-grid-row govuk-!-margin-bottom-6">
+        <div class="govuk-grid-column-full">
+            <hr>
+            </div>
+    
+      <div class="govuk-grid-column-two-thirds">
+
+            <h3 class="govuk-heading-m">Provider contact</h3>
+          <dl class="govuk-summary-list govuk-summary-list--no-border">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    Address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Suite A15 Milburn House<br>
+                    Dean Street<br>
+                    Newcastle upon Tyne<br>
+                    Tyne and Wear<br>
+                    NE1 1LE
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Website
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    <a href="http://www.b-skill.com">http://www.b-skill.com</a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact details
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">0333 900 0690</p>
+                  <p class="govuk-body">business@b-skill.com</p>
+                </dd>
+              </div>
+            </dl>
+  
+      </div>
+    
+      <div class="govuk-grid-column-one-third">
+
+  
+        </div>
+
+  </div>
+
+
+
+
+
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+  
+  const dataitems = [
+  'Javascript',
+  'React',
+  'CSS',
+  'HTML',
+  'Data science',
+  'Node'
+]
+
+accessibleAutocomplete({
+  element: document.querySelector('#autocomplete'),
+  displayMenu: 'overlay',
+  id: 'autocomplete', // To match it to the existing <label>.
+  source: dataitems
+})
+
+
+</script>
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}
