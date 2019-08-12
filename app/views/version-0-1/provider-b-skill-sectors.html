@@ -1,0 +1,182 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+B-SKILL Limited | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-xl">Training provider</span>
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+          B-SKILL Limited
+      </h1>
+      <span class="govuk-caption-m govuk-!-margin-bottom-4">Private work-based</span>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row govuk-!-margin-bottom-8">
+      
+        <nav class="navigation-secondary">
+          <ul>
+            <li>
+              <a href="provider-b-skill">Provider overview</a>
+            </li>
+            <li>
+                <a href="provider-b-skill-courses">Courses</a>
+            </li>
+            <li>
+                <a href="provider-b-skill-venues">Venues</a>
+            </li>
+            <li>
+              <a href="provider-b-skill-sectors" class="active" aria-current="section">Sector subject areas</a>
+            </li>
+            <li>
+              <a href="provider-b-skill-las">Local authority districts</a>
+            </li>
+          </ul>
+        </nav>
+
+    </div>
+
+
+
+    <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+  
+          <h2 class="govuk-heading-l">Achievement by sector subject area</h2>
+          <table class="govuk-table sort-filter-table sortable responsive-table govuk-!-margin-bottom-5">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+    
+                    <th class="govuk-table__header" scope="col"><span class="th-sort-link">Sector subject area (tier 1)</span></th>
+                  <th class="govuk-table__header" scope="col"><span class="th-sort-link">Number of students</span></th>
+                  <th class="govuk-table__header" scope="col"><span class="th-sort-link">Achievement rate</span></th>
+                  <th class="govuk-table__header" scope="col"><span class="th-sort-link">Retention rate</span></th>
+                  <th class="govuk-table__header" scope="col"><span class="th-sort-link">Pass rate</span></th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Business, Administration and Law</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>190</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievement rate: </span>98.4</td>              
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Retention rate: </span>98.4</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Pass rate: </span>100</td>
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Construction, Planning and the Built Environment</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>-</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievement rate: </span>-</td>              
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Retention rate: </span>-</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Pass rate: </span>-</td>
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Education and Training</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>-</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievement rate: </span>-</td>              
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Retention rate: </span>-</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Pass rate: </span>-</td>
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Engineering and Manufacturing Technologies</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>70</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievement rate: </span>95.9</td>              
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Retention rate: </span>95.9</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Pass rate: </span>100</td>
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Health, Public Services and Care</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>30</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievement rate: </span>87.9</td>              
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Retention rate: </span>87.9</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Pass rate: </span>100</td>
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Information and Communication Technology</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>110</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievement rate: </span>92.4</td>              
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Retention rate: </span>92.4</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Pass rate: </span>100</td>
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Leisure, Travel and Tourism</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>40</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievement rate: </span>48.7</td>              
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Retention rate: </span>48.7</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Pass rate: </span>100</td>
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Preparation for Life and Work</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>1140</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievement rate: </span>93.1</td>              
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Retention rate: </span>95</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Pass rate: </span>98.1</td>
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Retail and Commercial Enterprise</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>290</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievement rate: </span>90.7</td>              
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Retention rate: </span>90.7</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Pass rate: </span>100</td>
+                  </tr>
+    
+                              
+              </tbody>
+            </table>
+     
+</div>
+</div>
+
+
+
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+  
+  const dataitems = [
+  'Javascript',
+  'React',
+  'CSS',
+  'HTML',
+  'Data science',
+  'Node'
+]
+
+accessibleAutocomplete({
+  element: document.querySelector('#autocomplete'),
+  displayMenu: 'overlay',
+  id: 'autocomplete', // To match it to the existing <label>.
+  source: dataitems
+})
+
+
+</script>
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}
