@@ -506,17 +506,23 @@ hr { border: 0; border-top:1px solid #bfc1c3; margin-bottom:20px; }
   list-style-type: none;
 }
 
+.navigation-secondary a {
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  margin-right:20px;
+}
+
 @media (max-width: 640px) {
   .navigation-secondary li {
     border: 0;
     width: 100%;
     font-size:16px;
   }
-}
-
-.navigation-secondary a {
-  display: block;
-  padding: 15px;
+  .navigation-secondary a {
+    padding:15px 15px;
+    margin-right:0;
+  }
 }
 
 .navigation-secondary a:visited {
@@ -524,7 +530,7 @@ hr { border: 0; border-top:1px solid #bfc1c3; margin-bottom:20px; }
 }
 
 .navigation-secondary a:hover {
-  background-color: #f8f8f8;
+  text-decoration: underline;
 }
 
 .navigation-secondary .active {
@@ -532,6 +538,8 @@ hr { border: 0; border-top:1px solid #bfc1c3; margin-bottom:20px; }
   color: #0b0c0c;
   text-decoration: none;
 }
+
+.navigation-secondary .active:hover { text-decoration: none; }
 
 .navigation-secondary .active:visited {
   color: #0b0c0c;

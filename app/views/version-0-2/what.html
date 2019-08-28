@@ -1,0 +1,100 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  What would you like to find out about? | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+      <form method="post" class="form">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <h1 class="govuk-fieldset__heading">
+                What would you like to find out about?
+              </h1>
+            </legend>
+            <div class="govuk-radios">
+              
+
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="where" name="what" type="radio" value="where">
+                    <label class="govuk-label govuk-radios__label" for="where">
+                      A place and what provision is available there
+                    </label> </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="provider" name="what" type="radio" value="provider">
+                <label class="govuk-label govuk-radios__label" for="provider">
+                  A training provider
+                </label> </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="course" name="what" type="radio" value="course">
+                  <label class="govuk-label govuk-radios__label" for="course">
+                    A course
+                  </label> </div>
+                  <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="sector" name="what" type="radio" value="sector">
+                      <label class="govuk-label govuk-radios__label" for="sector">
+                        A sector subject area
+                      </label> </div>
+                  
+            </div>
+            
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <a href="#" class="govuk-button" id="continue-button">
+            Continue
+          </a>
+        
+          <script type="text/javascript">
+            document.getElementById("where").onclick = function () {
+              document.getElementById("continue-button").href="what-place"; 
+            }
+        
+            document.getElementById("provider").onclick = function() {
+              document.getElementById("continue-button").href="what-provider"; 
+            };
+
+            document.getElementById("course").onclick = function() {
+              document.getElementById("continue-button").href="what-course"; 
+            };
+
+            document.getElementById("sector").onclick = function() {
+              document.getElementById("continue-button").href="what-sector"; 
+            };
+        </script>
+        </div>
+
+
+
+    </form>
+    
+     
+  </div>
+</div>
+
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+{% endblock %}
