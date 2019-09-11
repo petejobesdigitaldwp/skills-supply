@@ -16,26 +16,26 @@ B-SKILL Limited | Find data on skills supply
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         <span class="govuk-caption-xl">Training provider</span>
-      <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
           Courses offered by B-SKILL Limited
       </h1>
     </div>
   </div>
 
   <div class="govuk-grid-row govuk-!-margin-bottom-8">
-      <div class="govuk-grid-column-full">
-      <nav class="navigation-secondary">
-        <ul>
-          <li>
-            <a href="provider-b-skill">Provider overview</a>
-          </li>
-          <li>
-              <a href="provider-b-skill-courses" class="active" aria-current="section">Courses</a>
-          </li>
+    <div class="govuk-grid-column-full">
+        <nav class="navigation-secondary">
+          <ul>
+            <li>
+              <a href="provider-b-skill">Provider overview</a>
+            </li>
+            <li>
+                <a href="provider-b-skill-courses" class="active" aria-current="section">Courses</a>
+            </li>
 
-        </ul>
-      </nav>
-    </div>
+          </ul>
+        </nav>
+      </div>
   </div>
 
 
@@ -47,7 +47,19 @@ B-SKILL Limited | Find data on skills supply
             <form class="form" action="lep-ne-gva.html">
                 <div class="govuk-form-group">
                     <label class="govuk-label" for="sort">
-                        <strong>Qualification title</strong>
+                        <strong>Course title contains</strong>
+                      </label>
+                      <input class="govuk-input" id="event-name" name="event-name" type="text">
+                </div>
+            </form>
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+      
+            <form class="form" action="lep-ne-gva.html">
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort">
+                        <strong>Provide name contains</strong>
                       </label>
                       <input class="govuk-input" id="event-name" name="event-name" type="text">
                 </div>
@@ -73,42 +85,88 @@ B-SKILL Limited | Find data on skills supply
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
     
-            <p class="show-with-responsive-table"><strong>Sort skills by:</strong></p>
+            <p class="show-with-responsive-table"><strong>Sort courses by:</strong></p>
             <table class="govuk-table sort-filter-table sortable responsive-table govuk-!-margin-bottom-5">
-              <thead class="govuk-table__head">
-                <tr class="govuk-table__row">
-    
-                    <th class="govuk-table__header" scope="col"><span class="th-sort-link">Course</span></th>
-                  <th class="govuk-table__header" scope="col"><span class="th-sort-link">Qualification</span></th>
-                  <th class="govuk-table__header" scope="col"><span class="th-sort-link">Qualification level</span></th>
-                  <th class="govuk-table__header" scope="col"><span class="th-sort-link">Awarding organisation</span></th>
-                </tr>
-              </thead>
-              <tbody class="govuk-table__body">
-    
+                <thead class="govuk-table__head">
                   <tr class="govuk-table__row">
-                      <th class="govuk-table__header" scope="row"><a href="course-btec-award">BTEC Award for IT Users (Entry Level 3)</a></th>
-                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification: </span>BTEC Award for IT Users (ITQ) (Entry 3)</td>
-                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification level: </span>Level 0</td>              
-                      <td class="govuk-table__cell" sorttable_customkey="16"><span aria-hidden="true" class="show-with-responsive-table">Awarding organisation: </span>Pearson Education Ltd (Formerly EDEXCEL)</td>
-                    </tr>
-
+        
+                      <th class="govuk-table__header" scope="col"><span class="th-sort-link">Course</span></th>
+                      <th class="govuk-table__header" scope="col"><span class="th-sort-link">Provider name</span></th>
+                      <th class="govuk-table__header" scope="col"><span class="th-sort-link">Level</span></th>
+                    <th class="govuk-table__header" scope="col"><span class="th-sort-link">Qualification type</span></th>
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+        
                     <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row"><a href="course-btec-award">Skills for Work</a></th>
-                        <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification: </span>Extended Certificate in Employability Skills</td>
-                        <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification level: </span>Level 1</td>              
-                        <td class="govuk-table__cell" sorttable_customkey="16"><span aria-hidden="true" class="show-with-responsive-table">Awarding organisation: </span>City & Guilds of London Institute</td>
-                      </tr>
-
-                      <tr class="govuk-table__row">
-                          <th class="govuk-table__header" scope="row"><a href="course-btec-award">Scale Up Programme</a></th>
-                          <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification: </span>Extended Certificate in Employability Skills</td>
-                          <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification level: </span>Level 2</td>              
-                          <td class="govuk-table__cell" sorttable_customkey="16"><span aria-hidden="true" class="show-with-responsive-table">Awarding organisation: </span>City & Guilds of London Institute</td>
-                        </tr>
-                              
-              </tbody>
-            </table>
+                        <th class="govuk-table__header" scope="row">BTEC Diploma in Sport (QCF)</th>
+                        <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provider: </span>Newcastle College</td>    
+                        <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Level: </span>3</td>
+                        <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification type: </span>Other regulated/accredited qualification</td>
+                         
+                    </tr>
+        
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Diploma in Aeronautical Engineering (QCF)</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provider: </span>Newcastle College</td>    
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Level: </span>3</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification type: </span>Other regulated/accredited qualification</td>
+                    </tr>
+        
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">EMTA Sub Dip Engineering Technologies (Rail) FL3</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provider: </span>Newcastle College</td>    
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Level: </span>-</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification type: </span>Other regulated/accredited qualification</td>  
+                    </tr>
+        
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">BTEC Extended Diploma in Construction and the Built Environment (QCF)</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provider: </span>Newcastle College</td>    
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Level: </span>3</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification type: </span>Other regulated/accredited qualification</td>    
+                    </tr>
+        
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">BTEC Extended Diploma in Performing Arts (QCF)</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provider: </span>Newcastle College</td>    
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Level: </span>3</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification type: </span>Other regulated/accredited qualification</td>   
+                    </tr>
+        
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Functional Skills qualification in mathematics</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provider: </span>Newcastle College</td>    
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Level: </span>1</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification type: </span>Functional skill</td>   
+                    </tr>
+        
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Functional Skills qualification in Mathematics at Entry 3</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provider: </span>Newcastle College</td>    
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Level: </span>E</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification type: </span>Functional skill</td>
+                    </tr>
+        
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Diploma in Plumbing Studies (QCF)</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provider: </span>Newcastle College</td>    
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Level: </span>2</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification type: </span>Other regulated/accredited qualification</td>   
+                    </tr>
+        
+                    <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Extended Diploma in IT (QCF)</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provider: </span>Newcastle College</td>    
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Level: </span>3</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification type: </span>14-19 Diploma and relevant components</td>  
+                    </tr>
+                  
+                    
+        
+                                
+                </tbody>
+              </table>
     
         </div>
         </div>
