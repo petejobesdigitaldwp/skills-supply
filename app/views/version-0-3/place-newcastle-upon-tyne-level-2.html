@@ -1,0 +1,419 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Newcastle upon Tyne | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-place.html">Places</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="place-newcastle-upon-tyne.html">Newcastle upon Tyne</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Level 2 qualifications</li>
+    </ol>
+  </div>
+
+<div class="govuk-grid-row govuk-!-margin-bottom-6">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+          Level 2 qualifications in Newcastle upon Tyne
+        </h1>
+        <span class="govuk-caption-xl govuk-!-margin-bottom-4">Local authority district</span>
+      </div>
+    </div>
+
+    <!-- <div class="govuk-grid-row govuk-!-margin-bottom-8">
+      <div class="govuk-grid-column-full">
+          <nav class="navigation-secondary">
+            <ul>
+              <li>
+                <a href="place-newcastle-upon-tyne" class="active" aria-current="section">Place overview</a>
+              </li>
+              <li>
+                  <a href="place-newcastle-upon-tyne-providers">Providers delivering training</a>
+              </li>
+              <li>
+                <a href="place-newcastle-upon-tyne-sectors">Sector subject areas</a>
+            </li>
+            <li>
+                <a href="place-newcastle-upon-tyne-levels">Qualification levels</a>
+            </li>
+  
+            </ul>
+          </nav>
+        </div>
+    </div>  -->
+
+
+    <div class="govuk-grid-row  govuk-!-margin-bottom-5">
+        <div class="govuk-grid-column-one-third">
+            <div class="headline-stat-box section-border-top">
+                <span class="title">Achievements</span>
+                <span class="figure">8,649</span>
+                <div class="detail govuk-body-s">
+                    <p class="govuk-body-s">Achievements in the last twelve months.</p>
+                    <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Data source:</strong> ESFA (2018)</p>
+                </div>
+            </div>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <div class="headline-stat-box section-border-top">
+                <span class="title"><a href="place-newcastle-upon-tyne-courses">Courses</a></span>
+                <span class="figure">793</span>
+                <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                    <p class="govuk-body-s">Courses that have been delivered in the last twelve months.</p>
+                    <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Data source:</strong> ESFA (2018)</p>
+                </div>
+                
+  
+            </div>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <div class="headline-stat-box section-border-top">
+                <span class="title"><a href="place-newcastle-upon-tyne-providers">Providers</a></span>
+                <span class="figure">542</span>
+                <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                    <p class="govuk-body-s">Providers who have delivered training in the last twelve months.</p>
+                    <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Data source:</strong> ESFA (2018)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+        <div class="govuk-grid-row govuk-!-margin-bottom-6">
+            <div class="govuk-grid-column-full">
+              <hr>
+              </div>
+            <div class="govuk-grid-column-two-thirds">
+              <h2 class="govuk-heading-m  govuk-!-margin-bottom-1">Level 2 achievements by sector subject area in 2017/2018</h2>
+              <p>The number of people passing a qualification within each sector subject area</p>
+              </div>
+
+              <div class="govuk-grid-column-full">
+                  <div class="govuk-tabs" data-module="tabs">
+                      <h2 class="govuk-tabs__title">
+                        Contents
+                      </h2>
+                    
+                      <ul class="govuk-tabs__list">
+                        <li class="govuk-tabs__list-item">
+                          <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#chart">
+                            Chart
+                          </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                          <a class="govuk-tabs__tab" href="#table">
+                            Table of data
+                          </a>
+                        </li>
+                      </ul>
+                    
+                      <section class="govuk-tabs__panel" id="chart">
+                        <div class="govuk-grid-row">
+                          <div class="govuk-grid-column-three-quarters">
+                              <h3 class="govuk-heading-m govuk-!-margin-bottom-3">Chart</h3>
+                          </div>
+                          </div>
+                          <div class="govuk-grid-row">
+                              <div class="govuk-grid-column-three-quarters">
+                        <img src="../../public/images/sector-subject-areas-bars.png" class="full-width-image"/>
+                    </div>
+                    <div class="govuk-grid-column-one-quarter">
+                        <div class="volumetrics-completion-selected">
+                            <span class="summary"><a href="place-newcastle-upon-tyne-level-2-health-public-services-care">Health, Public Services and Care</a></span>
+                            <strong>343</strong>
+                            <table class="govuk-table small-text-table">
+                              <thead class="govuk-table__head">
+                                <tr class="govuk-table__row">
+                                  <th scope="col" colspan="2"class="govuk-table__header">Achievment counts in this sector subject area</th>
+                                  
+                                </tr>
+                              </thead>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Health and Social Care</td>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">79</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Nursing and Subjects and Vocations Allied to Medicine</td>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">136</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Public Services</td>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">38</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Child Development and Well Being</td>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">90</td>
+                                </tr>
+                            </table>
+                          </div>
+                    </div>
+                </div>
+                </section>
+              
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="table">
+                    <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-three-quarters">
+                    <h3 class="govuk-heading-m govuk-!-margin-bottom-3">Table of data</h3>
+                  </div>
+                  <div class="govuk-grid-column-full">
+                  <table class="govuk-table">
+                      <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                          <th scope="col" class="govuk-table__header">Sector subject area</th>
+                          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Achievements</th>
+                          <th scope="col" class="govuk-table__header"></th>
+                        </tr>
+                      </thead>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Health, Public Services and Care</th>
+                          <td class="govuk-table__cell govuk-table__cell--numeric">221</td>
+                          <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Health, Public Services and Care</span></a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Science and Mathematics</th>
+                          <td class="govuk-table__cell govuk-table__cell--numeric">...</td>
+                          <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Science and Mathematics</span></a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Agriculture, Horticulture and Animal Care</th>
+                          <td class="govuk-table__cell govuk-table__cell--numeric">63</td>
+                          <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Agriculture, Horticulture and Animal Care</span></a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <th scope="row" class="govuk-table__header">Engineering and Manufacturing Technologies</th>
+                            <td class="govuk-table__cell govuk-table__cell--numeric">221</td>
+                            <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Engineering and Manufacturing Technologies</span></a></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <th scope="row" class="govuk-table__header">Construction, Planning and the Built Environment</th>
+                            <td class="govuk-table__cell govuk-table__cell--numeric">...</td>
+                            <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Construction, Planning and the Built Environment</span></a></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <th scope="row" class="govuk-table__header">Information and Communication Technology (ICT)</th>
+                            <td class="govuk-table__cell govuk-table__cell--numeric">63</td>
+                            <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Information and Communication Technology (ICT)</span></a></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Retail and Commercial Enterprise</th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">221</td>
+                              <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Retail and Commercial Enterprise</span></a></td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Leisure, Travel and Tourism</th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">...</td>
+                              <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Leisure, Travel and Tourism</span></a></td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Arts, Media and Publishing</th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">63</td>
+                              <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Arts, Media and Publishing</span></a></td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">History, Philosophy and Theology</th>
+                                <td class="govuk-table__cell govuk-table__cell--numeric">221</td>
+                                <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within History, Philosophy and Theology</span></a></td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Social Sciences</th>
+                                <td class="govuk-table__cell govuk-table__cell--numeric">...</td>
+                                <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Social Sciences</span></a></td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Languages, Literature and Culture</th>
+                                <td class="govuk-table__cell govuk-table__cell--numeric">63</td>
+                                <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Languages, Literature and Culture</span></a></td>
+                              </tr>
+                              <tr class="govuk-table__row">
+                                  <th scope="row" class="govuk-table__header">Education and Training</th>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">221</td>
+                                  <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Education and Training</span></a></td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <th scope="row" class="govuk-table__header">Preparation for Life and Work</th>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">...</td>
+                                  <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Preparation for Life and Work</span></a></td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <th scope="row" class="govuk-table__header">Business, Administration, Finance and Law</th>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">63</td>
+                                  <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Business, Administration, Finance and Law</span></a></td>
+                                </tr>
+                      </tbody>
+                    </table>
+              
+              
+              
+                  
+                </div>
+              </div>
+          
+            </section>
+          </div>
+         </div>
+         </div>
+
+
+         <div class="govuk-grid-row govuk-!-margin-bottom-6">
+            <div class="govuk-grid-column-two-thirds">
+              <h2 class="govuk-heading-m  govuk-!-margin-bottom-1">Level 2 achievements by qualification type in 2017/2018</h2>
+              <p>The number of people passing a qualification within each level</p>
+              </div>
+
+              <div class="govuk-grid-column-full">
+                  <div class="govuk-tabs" data-module="tabs">
+                      <h2 class="govuk-tabs__title">
+                        Contents
+                      </h2>
+                    
+                      <ul class="govuk-tabs__list">
+                        <li class="govuk-tabs__list-item">
+                          <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#chart2">
+                            Chart
+                          </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                          <a class="govuk-tabs__tab" href="#table2">
+                            Table of data
+                          </a>
+                        </li>
+                      </ul>
+                    
+                      <section class="govuk-tabs__panel" id="chart2">
+                        <div class="govuk-grid-row">
+                          <div class="govuk-grid-column-three-quarters">
+                              <h3 class="govuk-heading-m govuk-!-margin-bottom-3">Chart</h3>
+                          </div>
+                          </div>
+                          <div class="govuk-grid-row">
+                              <div class="govuk-grid-column-three-quarters">
+                        <img src="../../public/images/achievements-by-level-3.png" class="full-width-image"/>
+                    </div>
+                    <div class="govuk-grid-column-one-quarter">
+                        <div class="volumetrics-completion-selected">
+                            <span class="summary">Certificate</span>
+                            <strong>113</strong>
+                          </div>
+                    </div>
+                </div>
+                </section>
+              
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="table2">
+                    <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-three-quarters">
+                    <h3 class="govuk-heading-m govuk-!-margin-bottom-3">Table of data</h3>
+                  </div>
+                  <div class="govuk-grid-column-full">
+                  <table class="govuk-table">
+                      <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                          <th scope="col" class="govuk-table__header">Sector subject area</th>
+                          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Achievements</th>
+                          <th scope="col" class="govuk-table__header"></th>
+                        </tr>
+                      </thead>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Other Non-Regulated</th>
+                          <td class="govuk-table__cell govuk-table__cell--numeric">132</td>
+                          <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Other Non-Regulated qualifications</span></a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Certificate</th>
+                          <td class="govuk-table__cell govuk-table__cell--numeric">113</td>
+                          <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Certificate qualifications</span></a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Diploma</th>
+                          <td class="govuk-table__cell govuk-table__cell--numeric">71</td>
+                          <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Diploma qualifications</span></a></td>
+                        </tr>
+                      
+                              
+                      </tbody>
+                    </table>
+              
+              
+              
+                  
+                </div>
+              </div>
+          
+            </section>
+          </div>
+         </div>
+        </div>
+
+      <!-- <div class="govuk-grid-row govuk-!-margin-bottom-6">
+          <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m"><a href="place-providers.html">Providers delivering training in Newcastle upon Tyne</a></h2>
+            </div>
+        <div class="govuk-grid-column-one-half">
+            <h3 class="govuk-heading-s">
+                Providers with the highest number of students
+              </h3>
+
+              <ol class="govuk-list govuk-list--number">
+                  <li>Newcastle upon Tyne City Council</li>
+                  <li>Learndirect Limited</li>
+                  <li>Peopleplus Group Limited</li>
+                  <li>Gateshead College</li>
+                  <li>Summerhouse Equestrian and Training Centre LLP</li>
+                </ol>
+
+        </div>
+        <div class="govuk-grid-column-one-half">
+            <h3 class="govuk-heading-s">
+                Providers with the highest achievement rates
+              </h3>
+            
+              <ol class="govuk-list govuk-list--number">
+                  <li>Release potential limited</li>
+                  <li>St Helens College</li>
+                  <li>Darlington College</li>
+                  <li>B-Skill Limited</li>
+                  <li>Learndirect Limited</li>
+                </ol>            
+        </div>
+
+
+</div> -->
+
+<div class="govuk-grid-row govuk-!-margin-bottom-6">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-m">About this data</a></h2>
+      <p>This data is compiled using <a href="https://www.gov.uk/government/publications/sfa-course-directory">Education and Skills Funding Agency (ESFA)</a> and <a href="https://www.gov.uk/government/statistics/national-achievement-rates-tables-2017-to-2018">National Achievements Records Tables (NARTS)</a> data.</p>
+
+      <p>This data was last updated at the end of 2017-2018 academic year.</p>
+          
+      <p>You can use this data publicly.</p>
+      </div>
+  
+
+
+</div>
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+
+
+{% endblock %}

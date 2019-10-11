@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Find data on skills supply
+      </h1>
+      <p class="govuk-body-l">
+          This service lets you view information about skills supply in a specific area in England.
+      </p>
+      <p>You can explore data about:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>training providers</li>
+            <li>courses</li>
+            <li>training available by area</li>
+          </ul>
+
+      {{ govukButton({
+        text: "Start now",
+        href: "what",
+        classes: "govuk-button--start"
+    }) }}
+
+
+    </div>
+</div>
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+
+
+{% endblock %}

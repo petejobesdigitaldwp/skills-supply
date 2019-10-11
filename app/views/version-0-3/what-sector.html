@@ -1,0 +1,161 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+What sector subject area would you like to find out about? | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Sector subject areas</li>
+    </ol>
+  </div>
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+      <form method="post" class="form" action="sector-health-public-services-care">
+
+        <fieldset class="govuk-fieldset" id="where_fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+            What sector subject area would you like to find out about?
+            </h1>
+          </legend> 
+        
+          <div class="govuk-form-group">
+            <div id="autocomplete"></div>
+          </div>
+        </fieldset>
+
+        <button class="govuk-button">Continue</button>
+
+    </form>
+    
+     
+  </div>
+</div>
+
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+  
+    /*global accessibleAutocomplete*/
+    function customResults (query, matchedResults) {
+      var results = [
+      { areatype: 'Tier 1', name: 'Health, Public Services and Care' },
+      { areatype: 'Health, Public Services and Care', name: 'Medicine and dentistry' },
+      { areatype: 'Health, Public Services and Care', name: 'Nursing, and subjects and vocations allied to medicine' },
+      { areatype: 'Health, Public Services and Care', name: 'Health and social care' },
+      { areatype: 'Health, Public Services and Care', name: 'Public services' },
+      { areatype: 'Health, Public Services and Care', name: 'Child development and well being' },
+      { areatype: 'Tier 1', name: 'Science and Mathematics' },
+      { areatype: 'Science and Mathematics', name: 'Science' },
+      { areatype: 'Science and Mathematics', name: 'Mathematics and statistics' },
+      { areatype: 'Tier 1', name: 'Agriculture, Horticulture and Animal Care' },
+      { areatype: 'Agriculture, Horticulture and Animal Care', name: 'Agriculture' },
+      { areatype: 'Agriculture, Horticulture and Animal Care', name: 'Horticulture and forestry' },
+      { areatype: 'Agriculture, Horticulture and Animal Care', name: 'Animal care and veterinary science' },
+      { areatype: 'Agriculture, Horticulture and Animal Care', name: 'Environmental conservation' },
+      { areatype: 'Tier 1', name: 'Engineering and Manufacturing Technologies' },
+      { areatype: 'Engineering and Manufacturing Technologies', name: 'Engineering' },
+      { areatype: 'Engineering and Manufacturing Technologies', name: 'Manufacturing technologies' },
+      { areatype: 'Engineering and Manufacturing Technologies', name: 'Transportation operations and maintenance' },
+      { areatype: 'Tier 1', name: 'Construction, Planning and the Built Environment' },
+      { areatype: 'Construction, Planning and the Built Environment', name: 'Architecture' },
+      { areatype: 'Construction, Planning and the Built Environment', name: 'Building and construction' },
+      { areatype: 'Construction, Planning and the Built Environment', name: 'Urban, rural and regional planning' },
+      { areatype: 'Tier 1', name: 'Information and Communication Technology (ICT)' },
+      { areatype: 'Information and Communication Technology (ICT)', name: 'ICT practitioners' },
+      { areatype: 'Information and Communication Technology (ICT)', name: 'ICT for users' },
+      { areatype: 'Tier 1', name: 'Retail and Commercial Enterprise' },
+      { areatype: 'Retail and Commercial Enterprise', name: 'Retailing and wholesaling' },
+      { areatype: 'Retail and Commercial Enterprise', name: 'Warehousing and distribution' },
+      { areatype: 'Retail and Commercial Enterprise', name: 'Service enterprises' },
+      { areatype: 'Retail and Commercial Enterprise', name: 'Hospitality and catering' },
+      { areatype: 'Tier 1', name: 'Leisure, Travel and Tourism' },
+      { areatype: 'Leisure, Travel and Tourism', name: 'Sport, leisure and recreation' },
+      { areatype: 'Leisure, Travel and Tourism', name: 'Travel and tourism' },
+      { areatype: 'Tier 1', name: 'Arts, Media and Publishing' },
+      { areatype: 'Arts, Media and Publishing', name: 'Performing arts' },
+      { areatype: 'Arts, Media and Publishing', name: 'Crafts, creative arts and design' },
+      { areatype: 'Arts, Media and Publishing', name: 'Media and communication' },
+      { areatype: 'Arts, Media and Publishing', name: 'Publishing and information services' },
+      { areatype: 'Tier 1', name: 'History, Philosophy and Theology' },
+      { areatype: 'History, Philosophy and Theology', name: 'History' },
+      { areatype: 'History, Philosophy and Theology', name: 'Archaeology and archaeological sciences' },
+      { areatype: 'History, Philosophy and Theology', name: 'Philosophy' },
+      { areatype: 'History, Philosophy and Theology', name: 'Theology and religious studies' },
+      { areatype: 'Tier 1', name: 'Social Sciences' },
+      { areatype: 'Social Sciences', name: 'Geography' },
+      { areatype: 'Social Sciences', name: 'Sociology and social policy' },
+      { areatype: 'Social Sciences', name: 'Politics' },
+      { areatype: 'Social Sciences', name: 'Economics' },
+      { areatype: 'Social Sciences', name: 'Anthropology' },
+      { areatype: 'Tier 1', name: 'Languages, Literature and Culture' },
+      { areatype: 'Languages, Literature and Culture', name: 'Languages, literature and culture of the British isles' },
+      { areatype: 'Languages, Literature and Culture', name: 'Other languages, literature and culture' },
+      { areatype: 'Languages, Literature and Culture', name: 'Linguistics' },
+      { areatype: 'Tier 1', name: 'Education and Training' },
+      { areatype: 'Education and Training', name: 'Teaching and lecturing' },
+      { areatype: 'Education and Training', name: 'Direct learning support' },
+      { areatype: 'Tier 1', name: 'Preparation for Life and Work' },
+      { areatype: 'Preparation for Life and Work', name: 'Foundations for learning and life' },
+      { areatype: 'Preparation for Life and Work', name: 'Preperation for work' },
+      { areatype: 'Tier 1', name: 'Business, Administration, Finance and Law' },
+      { areatype: 'Business, Administration, Finance and Law', name: 'Accounting and finance' },
+      { areatype: 'Business, Administration, Finance and Law', name: 'Administration' },
+      { areatype: 'Business, Administration, Finance and Law', name: 'Business management' },
+      { areatype: 'Business, Administration, Finance and Law', name: 'Marketing and sales' },
+      { areatype: 'Business, Administration, Finance and Law', name: 'Law and legal services' }
+      
+      ]
+      const checkMatch = results.filter(result => 
+       result.name.toLowerCase().indexOf(query.toLowerCase()) !== -1 // || result.areatype.toLowerCase().indexOf(query.toLowerCase()) !== -1
+      )
+      matchedResults(checkMatch)
+    }
+
+  function inputValueTemplate (result) {
+    return result && result.name
+  }
+
+  function suggestionTemplate (result) {
+    return result && '<span class=\'areaname\'>' + result.name + '</span>' +
+      '<span class=\'areatype\'>' + result.areatype + '</span>'
+  }
+      
+  var element = document.querySelector('#autocomplete');
+  accessibleAutocomplete({
+    element: element,
+    id: 'autocomplete-class',
+    source: customResults,
+    templates: {
+        inputValue: inputValueTemplate,
+        suggestion: suggestionTemplate
+    }
+  });
+
+
+</script>
+
+{% endblock %}

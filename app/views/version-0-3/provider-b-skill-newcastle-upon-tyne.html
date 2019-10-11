@@ -1,0 +1,165 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+B-SKILL Limited | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-provider.html">Training providers</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="provider-b-skill.html">B-SKILL Limited</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Newcastle upon Tyne</li>
+    </ol>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+          B-SKILL Limited in Newcastle upon Tyne
+      </h1>
+      <span class="govuk-caption-m govuk-!-margin-bottom-4">Private work-based</span>
+    </div>
+  </div>
+  
+  <div class="govuk-grid-row govuk-!-margin-bottom-8">
+      <div class="govuk-grid-column-one-third">
+          <div class="headline-stat-box section-border-top">
+              <span class="title">Participation</span>
+              <span class="figure">13,178</span>
+              <div class="detail govuk-body-s">
+                 The number of people training with this provider in 2017/2018.
+              </div>
+          </div>
+      </div>
+      <div class="govuk-grid-column-one-third">
+          <div class="headline-stat-box section-border-top">
+              <span class="title">Acheivements</span>
+              <span class="figure">11,862</span>
+              <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                The number of people completing a course with this provider in 2017/2018.
+            </div>
+  
+          </div>
+      </div>
+  
+    </div>
+
+
+    <div class="govuk-grid-row govuk-!-margin-bottom-8">
+      <div class="govuk-grid-column-full">
+          <h2 class="govuk-heading-m">Achievements by age group</h2>
+        <table class="govuk-table sort-filter-table sortable responsive-table govuk-!-margin-bottom-5">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+
+                <th class="govuk-table__header" scope="col"><span class="th-sort-link">Age group</span></th>
+              <th class="govuk-table__header" scope="col"><span class="th-sort-link">Participation</span></th>
+              <th class="govuk-table__header" scope="col"><span class="th-sort-link">Achievements</span></th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+
+              <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">19+</th>
+                  <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                  <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+              </tr>
+          </tbody>
+          </table>
+      </div>
+    </div>
+
+
+  <div class="govuk-grid-row govuk-!-margin-bottom-6">
+    
+      <div class="govuk-grid-column-two-thirds">
+
+            <h2 class="govuk-heading-m">Provider contact</h2>
+          <dl class="govuk-summary-list govuk-summary-list--no-border">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                    Address
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    Suite A15 Milburn House<br>
+                    Dean Street<br>
+                    Newcastle upon Tyne<br>
+                    Tyne and Wear<br>
+                    NE1 1LE
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Website
+                </dt>
+                <dd class="govuk-summary-list__value">
+                    <a href="http://www.b-skill.com">http://www.b-skill.com</a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Contact details
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <p class="govuk-body">0333 900 0690</p>
+                  <p class="govuk-body">business@b-skill.com</p>
+                </dd>
+              </div>
+            </dl>
+  
+      </div>
+    
+      <div class="govuk-grid-column-one-third">
+
+  
+        </div>
+
+  </div>
+
+
+
+
+
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+  
+  const dataitems = [
+  'Javascript',
+  'React',
+  'CSS',
+  'HTML',
+  'Data science',
+  'Node'
+]
+
+accessibleAutocomplete({
+  element: document.querySelector('#autocomplete'),
+  displayMenu: 'overlay',
+  id: 'autocomplete', // To match it to the existing <label>.
+  source: dataitems
+})
+
+
+</script>
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}

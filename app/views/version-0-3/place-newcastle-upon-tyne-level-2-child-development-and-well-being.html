@@ -1,0 +1,242 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Newcastle upon Tyne | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-place.html">Places</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="place-newcastle-upon-tyne.html">Newcastle upon Tyne</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="place-newcastle-upon-tyne-level-2.html">Level 2 qualifications</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="place-newcastle-upon-tyne-level-2-health-publid-services-care.html">Health, Public Services and Care</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Child Development and Well Being</li>
+    </ol>
+  </div>
+
+<div class="govuk-grid-row govuk-!-margin-bottom-6">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+          Level 2 qualifications in Child Development and Well Being in Newcastle upon Tyne
+        </h1>
+        <span class="govuk-caption-xl govuk-!-margin-bottom-4">Local authority district</span>
+      </div>
+    </div>
+
+    <!-- <div class="govuk-grid-row govuk-!-margin-bottom-8">
+      <div class="govuk-grid-column-full">
+          <nav class="navigation-secondary">
+            <ul>
+              <li>
+                <a href="place-newcastle-upon-tyne" class="active" aria-current="section">Place overview</a>
+              </li>
+              <li>
+                  <a href="place-newcastle-upon-tyne-providers">Providers delivering training</a>
+              </li>
+              <li>
+                <a href="place-newcastle-upon-tyne-sectors">Sector subject areas</a>
+            </li>
+            <li>
+                <a href="place-newcastle-upon-tyne-levels">Qualification levels</a>
+            </li>
+  
+            </ul>
+          </nav>
+        </div>
+    </div>  -->
+
+
+    <div class="govuk-grid-row  govuk-!-margin-bottom-5">
+        <div class="govuk-grid-column-one-third">
+            <div class="headline-stat-box section-border-top">
+                <span class="title">Achievements</span>
+                <span class="figure">18</span>
+                <div class="detail govuk-body-s">
+                    <p class="govuk-body-s">Achievements in the last twelve months.</p>
+                    <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Data source:</strong> ESFA (2018)</p>
+                </div>
+            </div>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <div class="headline-stat-box section-border-top">
+                <span class="title"><a href="place-newcastle-upon-tyne-courses">Courses</a></span>
+                <span class="figure">2</span>
+                <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                    <p class="govuk-body-s">Courses that have been delivered in the last twelve months.</p>
+                    <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Data source:</strong> ESFA (2018)</p>
+                </div>
+                
+  
+            </div>
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <div class="headline-stat-box section-border-top">
+                <span class="title"><a href="place-newcastle-upon-tyne-providers">Providers</a></span>
+                <span class="figure">1</span>
+                <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                    <p class="govuk-body-s">Providers who have delivered training in the last twelve months.</p>
+                    <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Data source:</strong> ESFA (2018)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+         <div class="govuk-grid-row govuk-!-margin-bottom-6">
+            <div class="govuk-grid-column-full">
+                <hr>
+                </div>
+            <div class="govuk-grid-column-two-thirds">
+              <h2 class="govuk-heading-m  govuk-!-margin-bottom-1">Achievements by qualification type</h2>
+              <p>The number of people passing a qualification within each type</p>
+              </div>
+
+              <div class="govuk-grid-column-full">
+                  <div class="govuk-tabs" data-module="tabs">
+                      <h2 class="govuk-tabs__title">
+                        Contents
+                      </h2>
+                    
+                      <ul class="govuk-tabs__list">
+                        <li class="govuk-tabs__list-item">
+                          <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#chart2">
+                            Chart
+                          </a>
+                        </li>
+                        <li class="govuk-tabs__list-item">
+                          <a class="govuk-tabs__tab" href="#table2">
+                            Table of data
+                          </a>
+                        </li>
+                      </ul>
+                    
+                      <section class="govuk-tabs__panel" id="chart2">
+                        <div class="govuk-grid-row">
+                          <div class="govuk-grid-column-three-quarters">
+                              <h3 class="govuk-heading-m govuk-!-margin-bottom-3">Chart</h3>
+                          </div>
+                          </div>
+                          <div class="govuk-grid-row">
+                              <div class="govuk-grid-column-three-quarters">
+                        <img src="../../public/images/achievements-by-level-18.png" class="full-width-image"/>
+                    </div>
+                    <div class="govuk-grid-column-one-quarter">
+                        <div class="volumetrics-completion-selected">
+                            <span class="summary">Certificate</span>
+                            <strong>11</strong>
+                          </div>
+                    </div>
+                </div>
+                </section>
+              
+                <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="table2">
+                    <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-three-quarters">
+                    <h3 class="govuk-heading-m govuk-!-margin-bottom-3">Table of data</h3>
+                  </div>
+                  <div class="govuk-grid-column-full">
+                  <table class="govuk-table">
+                      <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                          <th scope="col" class="govuk-table__header">Sector subject area</th>
+                          <th scope="col" class="govuk-table__header govuk-table__header--numeric">Achievements</th>
+                          <th scope="col" class="govuk-table__header"></th>
+                        </tr>
+                      </thead>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Certificate</th>
+                          <td class="govuk-table__cell govuk-table__cell--numeric">11</td>
+                          <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within certificate qualifications</span></a></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Diploma</th>
+                          <td class="govuk-table__cell govuk-table__cell--numeric">7</td>
+                          <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within diplomad qualifications</span></a></td>
+                        </tr>
+                   
+                              
+                      </tbody>
+                    </table>
+              
+              
+              
+                  
+                </div>
+              </div>
+          
+            </section>
+          </div>
+         </div>
+        </div>
+
+      <!-- <div class="govuk-grid-row govuk-!-margin-bottom-6">
+          <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m"><a href="place-providers.html">Providers delivering training in Newcastle upon Tyne</a></h2>
+            </div>
+        <div class="govuk-grid-column-one-half">
+            <h3 class="govuk-heading-s">
+                Providers with the highest number of students
+              </h3>
+
+              <ol class="govuk-list govuk-list--number">
+                  <li>Newcastle upon Tyne City Council</li>
+                  <li>Learndirect Limited</li>
+                  <li>Peopleplus Group Limited</li>
+                  <li>Gateshead College</li>
+                  <li>Summerhouse Equestrian and Training Centre LLP</li>
+                </ol>
+
+        </div>
+        <div class="govuk-grid-column-one-half">
+            <h3 class="govuk-heading-s">
+                Providers with the highest achievement rates
+              </h3>
+            
+              <ol class="govuk-list govuk-list--number">
+                  <li>Release potential limited</li>
+                  <li>St Helens College</li>
+                  <li>Darlington College</li>
+                  <li>B-Skill Limited</li>
+                  <li>Learndirect Limited</li>
+                </ol>            
+        </div>
+
+
+</div> -->
+
+<div class="govuk-grid-row govuk-!-margin-bottom-6">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-m">About this data</a></h2>
+      <p>This data is compiled using <a href="https://www.gov.uk/government/publications/sfa-course-directory">Education and Skills Funding Agency (ESFA)</a> and <a href="https://www.gov.uk/government/statistics/national-achievement-rates-tables-2017-to-2018">National Achievements Records Tables (NARTS)</a> data.</p>
+
+      <p>This data was last updated at the end of 2017-2018 academic year.</p>
+          
+      <p>You can use this data publicly.</p>
+      </div>
+  
+
+
+</div>
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+
+
+{% endblock %}

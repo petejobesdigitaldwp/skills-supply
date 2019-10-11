@@ -1,0 +1,192 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Health, Public Services and Care | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-sector.html">Sector subject areas</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Health, Public Services and Care</li>
+    </ol>
+  </div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">
+        Health, Public Services and Care
+    </h1>
+  </div>
+</div>
+
+
+<div class="govuk-grid-row  govuk-!-margin-bottom-5">
+  <div class="govuk-grid-column-one-third">
+      <div class="headline-stat-box section-border-top">
+          <span class="title">Participation</span>
+          <span class="figure">372,467</span>
+          <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+              <p class="govuk-body-s">The number of people participating in a course in this sector subject area in 2017-2018.</p>
+              <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Data source:</strong> ESFA (2018)</p>
+          </div>
+          
+
+      </div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+      <div class="headline-stat-box section-border-top">
+          <span class="title">Achievements</span>
+          <span class="figure">218,569</span>
+          <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+              <p class="govuk-body-s">The number of people passing a course in this sector subject area in 2017-2018.</p>
+              <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Data source:</strong> ESFA (2018)</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row  govuk-!-margin-bottom-5">
+    <div class="govuk-grid-column-full">
+      <hr>
+      <h2 class="govuk-heading-m">Tier 2 sector subject areas in Health, public services and care</h2>
+      <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Sector subject area</th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric">Participation</th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric">Achievements</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="sector-child-development-and-well-being">Medicine and dentistry</a></th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">121,098</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">119,027</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="sector-child-development-and-well-being">Nursing, and subjects and vocations allied to medicine</a></th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">13,080</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">9,826</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="sector-child-development-and-well-being">Health and social care</a></th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">46,837</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">41,695</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="sector-child-development-and-well-being">Public services</a></th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">12,918</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">11,006</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="sector-child-development-and-well-being">Child development and well being</a></th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">75,645</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">68,275</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="govuk-grid-row  govuk-!-margin-bottom-5">
+    <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-m">Where training is being delivered</h2>
+        <div class="govuk-tabs" data-module="govuk-tabs">
+            <div class="govuk-tabs" data-module="tabs">
+                <h2 class="govuk-tabs__title">
+                  Contents
+                </h2>
+              
+                <ul class="govuk-tabs__list">
+                  <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#heatmap">
+                      Heatmap
+                    </a>
+                  </li>
+                  <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#table">
+                      Table of data
+                    </a>
+                  </li>
+                </ul>
+            <section class="govuk-tabs__panel" id="heatmap">
+              
+                <div class="govuk-grid-row">
+                <div class="govuk-grid-column-three-quarters">
+                    <h3 class="govuk-heading-m govuk-!-margin-bottom-3">Heatmap</h3>
+                    <span class="govuk-hint">Select an area on the map to view more information</span>
+                </div>
+                </div>
+
+
+                <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <img src="../../public/images/gb-map.png" class="full-width-image"/>
+                </div>
+                <div class="govuk-grid-column-one-third">
+                    <h3 class="govuk-heading-s"><a href="place-newcastle-upon-tyne-health-public-services-care">Newcastle upon Tyne</a></h3>
+
+                    <div class="govuk-heading-s govuk-!-margin-bottom-1">
+                        <strong>Participation</strong>
+                      </div>
+                      <div class="govuk-body-s label extra-annotation-emp">
+                        <span class="figure-emp">6,341</span>
+                      </div>
+
+                      <div class="govuk-heading-s govuk-!-margin-bottom-1">
+                          <strong>Achievements</strong>
+                        </div>
+                        <div class="govuk-body-s label extra-annotation-emp">
+                          <span class="figure-emp">5,789</span>
+                        </div>
+                </div>
+            </section>
+            <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="table">
+              
+            </section>
+
+          </div>
+    </div>
+    </div>
+
+</div>
+  
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-m">About this data</a></h2>
+            <p>This data is compiled using <a href="https://www.gov.uk/government/publications/sfa-course-directory">Education and Skills Funding Agency (ESFA)</a> and <a href="https://www.gov.uk/government/statistics/national-achievement-rates-tables-2017-to-2018">National Achievements Records Tables (NARTS)</a> data.</p>
+      
+            <p>This data was last updated at the end of 2017-2018 academic year.</p>
+                
+            <p>You can use this data publicly.</p>
+          </div>
+      </div>
+    </div>
+
+    {% include "includes/feedback.html" %}
+
+    {% endblock %}
+    
+    {% block pageScripts %}
+    
+    
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}

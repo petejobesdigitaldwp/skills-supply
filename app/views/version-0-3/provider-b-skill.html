@@ -1,0 +1,394 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+B-SKILL Limited | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+
+<div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+          <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-provider.html">Training providers</a></li>
+          <li class="govuk-breadcrumbs__list-item" aria-current="page">B-SKILL Limited</li>
+        </ol>
+      </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+          B-SKILL Limited
+      </h1>
+      <span class="govuk-caption-m govuk-!-margin-bottom-4">Private work-based</span>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row govuk-!-margin-bottom-8">
+        <div class="govuk-grid-column-full">
+      
+        <nav class="navigation-secondary">
+          <ul>
+            <li>
+              <a href="provider-b-skill" class="active" aria-current="section">Provider overview</a>
+            </li>
+            <li>
+                <a href="provider-b-skill-courses">Courses</a>
+            </li>
+          </ul>
+        </nav>
+        
+        </div>
+    </div>
+
+
+  <div class="govuk-grid-row govuk-!-margin-bottom-8">
+    
+      <div class="govuk-grid-column-full">
+            <h1 class="govuk-heading-m">
+                    Providers ran by B-Skill limited
+                </h1>
+
+            <table class="govuk-table  responsive-table">
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Name</th>
+                        <th scope="col" class="govuk-table__header">Address</th>
+                        <th scope="col" class="govuk-table__header">Contact details</th>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                          <td class="govuk-table__header">B-Skill Limited</td>
+                          <td class="govuk-table__cell">Suite A15 Milburn House<br>
+                            Dean Street<br>
+                            Newcastle upon Tyne<br>
+                            Tyne and Wear<br>
+                            NE1 1LE</td>
+                          <td class="govuk-table__cell"><a href="http://www.b-skill.com">http://www.b-skill.com</a><br>
+                          <a href="mailto:business@b-skill.com">business@b-skill.com</a><br>
+                          0333 900 0690</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                            <td class="govuk-table__header">B-Skill Limited Two</td>
+                            <td class="govuk-table__cell">Suite A15 Milburn House<br>
+                              Dean Street<br>
+                              Newcastle upon Tyne<br>
+                              Tyne and Wear<br>
+                              NE1 1LE</td>
+                              <td class="govuk-table__cell"><a href="http://www.b-skill.com">http://www.b-skill.com</a><br>
+                                <a href="mailto:business@b-skill.com">business@b-skill.com</a><br>
+                                0333 900 0690</td>
+                        </tr>
+                  </table>
+  
+      </div>
+
+
+  </div>
+
+  <h2 class="govuk-heading-m">
+        Achievements for B-Skill limited
+    </h2>
+
+    <div class="govuk-grid-row govuk-!-margin-bottom-8">
+            <div class="govuk-grid-column-one-third">
+                <div class="headline-stat-box section-border-top">
+                    <span class="title">Participation</span>
+                    <span class="figure">13,178</span>
+                    <div class="detail govuk-body-s">
+                       The number of people training with this provider in 2017/2018.
+                    </div>
+                </div>
+            </div>
+            <div class="govuk-grid-column-one-third">
+                <div class="headline-stat-box section-border-top">
+                    <span class="title">Acheivements</span>
+                    <span class="figure">11,862</span>
+                    <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                      The number of people completing a course with this provider in 2017/2018.
+                  </div>
+        
+                </div>
+            </div>
+      
+        </div>
+  
+  <div class="govuk-tabs" data-module="tabs">
+      <h2 class="govuk-tabs__title">
+        Contents
+      </h2>
+    
+      <ul class="govuk-tabs__list">
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#chart-2">
+            Sector subject areas
+          </a>
+        </li>
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#table-2">
+            Local authority districts
+          </a>
+        </li>
+      </ul>
+    
+      <section class="govuk-tabs__panel" id="chart-2">
+          <h3 class="govuk-heading-m">Achievement by sector subject area</h3>
+          <table class="govuk-table sort-filter-table sortable responsive-table govuk-!-margin-bottom-5">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+    
+                    <th class="govuk-table__header" scope="col"><span class="th-sort-link">Sector subject area (tier 1)</span></th>
+                  <th class="govuk-table__header" scope="col"><span class="th-sort-link">Participation</span></th>
+                  <th class="govuk-table__header" scope="col"><span class="th-sort-link">Achievements</span></th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Business, Administration and Law</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>         
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Construction, Planning and the Built Environment</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Education and Training</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Engineering and Manufacturing Technologies</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Health, Public Services and Care</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Information and Communication Technology</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Leisure, Travel and Tourism</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Preparation for Life and Work</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                  </tr>
+    
+                  <tr class="govuk-table__row">
+                      <th class="govuk-table__header" scope="row">Retail and Commercial Enterprise</th>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                      <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                  </tr>
+    
+                              
+              </tbody>
+            </table>
+      </section>
+
+      <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="table-2">
+          <h3 class="govuk-heading-m">Achievement by local authority district</h3>
+      <p class="show-with-responsive-table"><strong>Sort local authority districts by:</strong></p>
+      <table class="govuk-table sort-filter-table sortable responsive-table govuk-!-margin-bottom-5">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+
+              <th class="govuk-table__header" scope="col"><strong>Delivery local authority district</strong></th>
+            <th class="govuk-table__header" scope="col"><span class="th-sort-link">Participation</span></th>
+            <th class="govuk-table__header" scope="col"><span class="th-sort-link">Achievements</span></th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Barking and Dagenham</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Bolton</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Bradford</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">County Durham</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Darlington</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Gateshead</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Kirklees</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Manchester</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Middlesbrough</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Newcastle upon Tyne</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">North Tyneside</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Northumberland</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Plymouth</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Redcar and Cleveland</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Rochdale</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Sefton</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">South Tyneside</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Sunderland</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Tower Hamlets</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Wakefield</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Wirral</th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+            </tr>
+
+                        
+        </tbody>
+      </table>
+    </section>
+</div>
+
+
+
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+  
+  const dataitems = [
+  'Javascript',
+  'React',
+  'CSS',
+  'HTML',
+  'Data science',
+  'Node'
+]
+
+accessibleAutocomplete({
+  element: document.querySelector('#autocomplete'),
+  displayMenu: 'overlay',
+  id: 'autocomplete', // To match it to the existing <label>.
+  source: dataitems
+})
+
+
+</script>
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}
