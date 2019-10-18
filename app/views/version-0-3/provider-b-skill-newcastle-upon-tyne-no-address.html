@@ -1,0 +1,136 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+B-SKILL Limited | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-provider.html">Training providers</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="provider-b-skill.html">B-SKILL Limited</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Newcastle upon Tyne</li>
+    </ol>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+          B-SKILL Limited in Newcastle upon Tyne
+      </h1>
+      <p class="govuk-body-l govuk-!-margin-bottom-3">Private work-based training provider.</p>
+      <p class="last-update govuk-!-margin-bottom-6">This data was last updated in September 2019</p>
+    </div>
+  </div>
+  
+  <div class="govuk-grid-row govuk-!-margin-bottom-8">
+      <div class="govuk-grid-column-one-third">
+          <div class="headline-stat-box section-border-top">
+              <span class="title">Participation</span>
+              <span class="figure">13,178</span>
+              <div class="detail govuk-body-s">
+                 The number of people training with this provider in 2017/2018.
+              </div>
+          </div>
+      </div>
+      <div class="govuk-grid-column-one-third">
+          <div class="headline-stat-box section-border-top">
+              <span class="title">Acheivements</span>
+              <span class="figure">11,862</span>
+              <div class="detail govuk-body-s govuk-!-margin-bottom-0">
+                The number of people completing a course with this provider in 2017/2018.
+            </div>
+  
+          </div>
+      </div>
+  
+    </div>
+
+
+    <div class="govuk-grid-row govuk-!-margin-bottom-8">
+      <div class="govuk-grid-column-full">
+          <h2 class="govuk-heading-m">Achievements by age group</h2>
+        <table class="govuk-table sort-filter-table sortable responsive-table govuk-!-margin-bottom-5">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+
+                <th class="govuk-table__header" scope="col"><span class="th-sort-link">Age group</span></th>
+              <th class="govuk-table__header" scope="col"><span class="th-sort-link">Participation</span></th>
+              <th class="govuk-table__header" scope="col"><span class="th-sort-link">Achievements</span></th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+
+              <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">19+</th>
+                  <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                  <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+              </tr>
+          </tbody>
+          </table>
+      </div>
+    </div>
+
+
+  <div class="govuk-grid-row govuk-!-margin-bottom-6">
+    
+      <div class="govuk-grid-column-two-thirds">
+
+            <h2 class="govuk-heading-m">Provider contact</h2>
+          <p>There are no contact details for this provider in this area. Contact details for other areas may be available on the <a href="provider-b-skill">provider overview page</a>.</p>
+  
+      </div>
+    
+      <div class="govuk-grid-column-one-third">
+
+  
+        </div>
+
+  </div>
+
+
+
+
+
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+  
+  const dataitems = [
+  'Javascript',
+  'React',
+  'CSS',
+  'HTML',
+  'Data science',
+  'Node'
+]
+
+accessibleAutocomplete({
+  element: document.querySelector('#autocomplete'),
+  displayMenu: 'overlay',
+  id: 'autocomplete', // To match it to the existing <label>.
+  source: dataitems
+})
+
+
+</script>
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}
