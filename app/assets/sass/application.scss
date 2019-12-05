@@ -480,6 +480,14 @@ hr { border: 0; border-top:1px solid #bfc1c3; margin-bottom:20px; }
 
 .footer-feedback-expand { border-top:10px solid #005ea5; padding-top:15px; }
 
+/*** SELECT REVEAL ***/
+
+.govuk-select__conditional {
+  margin-left:0;
+  margin-top:-15px;
+  padding-left:16px;
+}
+
 /*** SECONDARY NAV ***/
 
 .navigation-secondary ul:after {
@@ -492,12 +500,10 @@ hr { border: 0; border-top:1px solid #bfc1c3; margin-bottom:20px; }
   border-bottom: 1px solid #bfc1c3;
   margin: auto;
   font-size:19px;
-  max-width: 1000px;
 }
 
 .navigation-secondary ul {
   margin: 0 auto;
-  max-width: 1000px;
   padding-left: 0;
 }
 
@@ -554,3 +560,56 @@ hr { border: 0; border-top:1px solid #bfc1c3; margin-bottom:20px; }
 .extra-annotation-emp { border-top:2px solid #bfc1c3; padding-top:10px; }
 
 .figure-emp { color:#005ea5; font-weight: bold; font-size:20px; }
+
+
+
+// Bodged width override - add app-page--wide to bodyClasses
+.app-page--wide .govuk-width-container {
+  $width: 1220px;
+  // By default, limit the width of the container to the page width
+  max-width: $width;
+  // On mobile, add half width gutters
+  margin: 0 $govuk-gutter-half;
+  // Respect 'display cutout' safe area (avoids notches and rounded corners)
+  @supports (margin: unquote("max(calc(0px))")) {
+    $gutter-safe-area-right: calc(#{$govuk-gutter-half} + env(safe-area-inset-right));
+    $gutter-safe-area-left: calc(#{$govuk-gutter-half} + env(safe-area-inset-left));
+    // Use max() to pick largest margin, default or with safe area
+    // Escaped due to Sass max() vs. CSS native max()
+    margin-right: unquote("max(#{$govuk-gutter-half}, #{$gutter-safe-area-right})");
+    margin-left: unquote("max(#{$govuk-gutter-half}, #{$gutter-safe-area-left})");
+  }
+  // On tablet, add full width gutters
+  @include govuk-media-query($from: tablet) {
+    margin: 0 $govuk-gutter;
+    // Respect 'display cutout' safe area (avoids notches and rounded corners)
+    @supports (margin: unquote("max(calc(0px))")) {
+      $gutter-safe-area-right: calc(#{$govuk-gutter-half} + env(safe-area-inset-right));
+      $gutter-safe-area-left: calc(#{$govuk-gutter-half} + env(safe-area-inset-left));
+      // Use max() to pick largest margin, default or with safe area
+      // Escaped due to Sass max() vs. CSS native max()
+      margin-right: unquote("max(#{$govuk-gutter}, #{$gutter-safe-area-right})");
+      margin-left: unquote("max(#{$govuk-gutter}, #{$gutter-safe-area-left})");
+    }
+  }
+  // As soon as the viewport is greater than the width of the page plus the
+  // gutters, just centre the content instead of adding gutters.
+  @include govuk-media-query($and: "(min-width: #{($width + $govuk-gutter * 2)})") {
+    margin: 0 auto;
+    // Since a safe area may have previously been set above,
+    // we need to duplicate this margin that centers the page.
+    @supports (margin: unquote("max(calc(0px))")) {
+      margin: 0 auto;
+    }
+  }
+  @include govuk-if-ie8 {
+    width: $width;
+    // Since media queries are not supported in IE8,
+    // we need to duplicate this margin that centers the page.
+    margin: 0 auto;
+  }
+}
+// Hacky fix for https://github.com/alphagov/govuk-frontend/issues/1658
+.app-page--wide .govuk-header__container {
+    margin-bottom: -10px;
+}

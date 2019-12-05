@@ -1,5 +1,7 @@
 {% extends "layout.html" %}
 
+{% set bodyClasses = "app-page--wide" %}
+
 {% block pageTitle %}
 Newcastle upon Tyne | Find data on skills supply
 {% endblock %}
@@ -17,59 +19,158 @@ Newcastle upon Tyne | Find data on skills supply
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
       <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-place.html">Places</a></li>
-      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="place-newcastle-upon-tyne.html">Newcastle upon Tyne</a></li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="page">Health, Public Services and Care</li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Newcastle upon Tyne</li>
     </ol>
   </div>
 
-<div class="govuk-grid-row govuk-!-margin-bottom-6">
+<div class="govuk-grid-row govuk-!-margin-bottom-3">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
-          Health, Public Services and Care in Newcastle upon Tyne
+          Newcastle upon Tyne
         </h1>
         <p class="govuk-body-l govuk-!-margin-bottom-3">Local authority district</p>
       <p class="last-update govuk-!-margin-bottom-3">This data was last updated in September 2019</p>
       </div>
     </div>
 
-    <!-- <div class="govuk-grid-row govuk-!-margin-bottom-8">
-      <div class="govuk-grid-column-full">
-          <nav class="navigation-secondary">
-            <ul>
-              <li>
-                <a href="place-newcastle-upon-tyne" class="active" aria-current="section">Place overview</a>
-              </li>
-              <li>
-                  <a href="place-newcastle-upon-tyne-providers">Providers delivering training</a>
-              </li>
-              <li>
-                <a href="place-newcastle-upon-tyne-sectors">Sector subject areas</a>
-            </li>
-            <li>
-                <a href="place-newcastle-upon-tyne-levels">Qualification levels</a>
-            </li>
-  
-            </ul>
-          </nav>
-        </div>
-    </div>  -->
+
 
 
     <div class="govuk-grid-row  govuk-!-margin-bottom-5">
-        <div class="govuk-grid-column-one-third">
-            <div class="headline-stat-box section-border-top">
-                <span class="title">Achievements</span>
-                <span class="figure">343</span>
-                <div class="detail govuk-body-s">
-                    <p class="govuk-body-s">The number of qualifications passed in the 2017/2018 academic year</p>
-                    <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Data source:</strong> ESFA Individualised Learner Record (2019)</p>
+        <div class="govuk-grid-column-one-quarter">
+            <h3 class="govuk-heading-m govuk-!-margin-bottom-3">Filters</h3>
+
+            <div class="govuk-form-group">
+                <label class="govuk-label govuk-!-font-weight-bold" for="ssa">
+                  Sector subject areas (tier 1)
+                </label>
+                <select class="govuk-select" id="ssa" name="ssa">
+                  <option value="-" selected>Show all</option>
+                  <option value="1">1 – Health, Public Services and Care</option>
+                  <option value="-">2 – Science and Mathematics</option>
+                  <option value="-">3 – Agriculture, Horticulture and Animal Care</option>
+                  <option value="-">4 – Engineering and Manufacturing Technologies</option>
+                  <option value="-">5 – Construction, Planning and the Built Environment</option>
+                  <option value="-">6 – Information and Communication Technology (ICT)</option>
+                  <option value="-">7 – Retail and Commercial Enterprise</option>
+                  <option value="-">8 – Leisure, Travel and Tourism</option>
+                  <option value="-">9 – Arts, Media and Publishing</option>
+                  <option value="-">10 – History, Philosophy and Theology</option>
+                  <option value="-">11 – Social Sciences</option>
+                  <option value="-">12 – Languages, Literature and Culture</option>
+                  <option value="-">13 – Education and Training</option>
+                  <option value="-">14 – Preparation for Life and Work</option>
+                  <option value="-">15 – Business, Administration, Finance and Law</option>
+                </select>
+              </div>
+
+              <div class="govuk-radios__conditional govuk-select__conditional" id="conditional-display" style="display: none;">
+                  <label class="govuk-label govuk-!-font-weight-bold" for="ssa-2">
+                      Sector subject areas (tier 2)
+                    </label>
+                  <select class="govuk-select" id="ssa-2" name="ssa-2">
+                      <option value="-" selected>Show all</option>
+                      <option value="1">1.1 – Medicine and dentistry</option>
+                      <option value="-">1.2 – Nursing, and subjects and vocations allied to medicine</option>
+                      <option value="-">1.3 – Health and social care</option>
+                      <option value="-">1.4 – Public services</option>
+                      <option value="-">1.5 – Child development and well being</option>                    
+                  </select>
+              </div>
+
+              <div class="govuk-form-group">
+                  <label class="govuk-label govuk-!-font-weight-bold" for="level">
+                    Qualification levels
+                  </label>
+                  <select class="govuk-select" id="level" name="level">
+                    <option value="-" selected>Show all</option>
+                    <option value="-">Entry level</option>
+                    <option value="1">Level 1</option>
+                    <option value="-">Level 2</option>
+                    <option value="-">Level 3</option>
+                    <option value="-">Level 4</option>
+                    <option value="-">Level 5</option>
+                    <option value="-">Level 6</option>
+                    <option value="-">Level 7</option>
+                    <option value="-">Level 8</option>
+                    <option value="-">Level 9</option>
+                    <option value="-">Not applicable</option>
+                  </select>
                 </div>
-            </div>
+
+                <div class="govuk-radios__conditional govuk-select__conditional" id="conditional-display-2" style="display: none;">
+                    <label class="govuk-label govuk-!-font-weight-bold" for="type">
+                        Qualification types
+                      </label>
+                    <select class="govuk-select" id="type" name="type">
+                        <option value="-" selected>Show all</option>
+                        <option value="1">Award</option>
+                        <option value="-">Certificate</option>
+                        <option value="-">Diploma</option>                  
+                    </select>
+                </div>
+
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                            <label class="govuk-label govuk-!-font-weight-bold">
+                            Type of provision
+                          </label>
+                        </legend>
+                        <div class="govuk-checkboxes govuk-checkboxes--small">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste">
+                              Courses
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                              Apprenticeships
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                  </div>
+  
+
+                <button class="govuk-button" data-module="govuk-button">
+                    Apply filters
+                  </button>
+
         </div>
+
+
+        <div class="govuk-grid-column-three-quarters">
+
+
+            <div class="govuk-grid-row govuk-!-margin-bottom-5">
+                <div class="govuk-grid-column-full">
+                    <nav class="navigation-secondary">
+                      <ul>
+                        <li>
+                          <a href="place-newcastle-upon-tyne" class="active" aria-current="section">Overview</a>
+                        </li>
+                        <li>
+                            <a href="place-newcastle-upon-tyne-providers">Training provision</a>
+                        </li>
+                        <li>
+                          <a href="place-newcastle-upon-tyne-sectors">Providers</a>
+                      </li>
+            
+                      </ul>
+                    </nav>
+                  </div>
+              </div>  
+
+
+    <div class="govuk-grid-row  govuk-!-margin-bottom-5">
+        
         <div class="govuk-grid-column-one-third">
-            <div class="headline-stat-box section-border-top">
-                <span class="title"><a href="place-newcastle-upon-tyne-courses-health-public-services-care">Courses</a></span>
-                <span class="figure">62</span>
+            <div class="headline-stat-box">
+                <span class="title">Training provisions</span>
+                <span class="figure">793</span>
                 <div class="detail govuk-body-s govuk-!-margin-bottom-0">
                     <p class="govuk-body-s">Courses delivered in the 2017/2018 academic year</p>
                     <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Data source:</strong> ESFA Individualised Learner Record (2019)</p>
@@ -79,15 +180,27 @@ Newcastle upon Tyne | Find data on skills supply
             </div>
         </div>
         <div class="govuk-grid-column-one-third">
-            <div class="headline-stat-box section-border-top">
-                <span class="title"><a href="place-newcastle-upon-tyne-providers-health-public-services-and-care">Providers</a></span>
-                <span class="figure">28</span>
+            <div class="headline-stat-box">
+                <span class="title">Number of students</span>
+                <span class="figure">542</span>
                 <div class="detail govuk-body-s govuk-!-margin-bottom-0">
                     <p class="govuk-body-s">Providers who have delivered training in the 2017/2018 academic year</p>
+                    <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Data source:</strong> ESFA (2018)</p>
+                </div>
+            </div>
+        </div>
+ 
+        <div class="govuk-grid-column-one-third">
+            <div class="headline-stat-box">
+                <span class="title">Achievements</span>
+                <span class="figure">8,649</span>
+                <div class="detail govuk-body-s">
+                    <p class="govuk-body-s">The number of qualifications passed in the 2017/2018 academic year</p>
                     <p class="govuk-body-s govuk-!-margin-bottom-0"><strong>Data source:</strong> ESFA Individualised Learner Record (2019)</p>
                 </div>
             </div>
         </div>
+
     </div>
     
 
@@ -97,7 +210,7 @@ Newcastle upon Tyne | Find data on skills supply
               <hr>
               </div>
             <div class="govuk-grid-column-two-thirds">
-              <h2 class="govuk-heading-m  govuk-!-margin-bottom-1">Achievements in Health, Public Services and Care by tier 2 sector subject area in 2017/2018</h2>
+              <h2 class="govuk-heading-m  govuk-!-margin-bottom-1">Achievements by sector subject area in 2017/2018</h2>
               <p>The number of qualifications achieved/passed in each sector subject area</p>
               </div>
 
@@ -128,12 +241,37 @@ Newcastle upon Tyne | Find data on skills supply
                           </div>
                           <div class="govuk-grid-row">
                               <div class="govuk-grid-column-three-quarters">
-                        <img src="../../public/images/sector-subjects-tier-two-bars.png" class="full-width-image"/>
+                        <img src="../../public/images/sector-subject-areas-bars.png" class="full-width-image"/>
                     </div>
                     <div class="govuk-grid-column-one-quarter">
                         <div class="volumetrics-completion-selected">
-                            <span class="summary"><a href="place-newcastle-upon-tyne-child-development-and-well-being">Child Development and Well Being</a></span>
-                            <strong>38</strong>
+                            <span class="summary">Health, Public Services and Care</span>
+                            <strong>343</strong>
+                            <table class="govuk-table small-text-table">
+                              <thead class="govuk-table__head">
+                                <tr class="govuk-table__row">
+                                  <th scope="col" colspan="2"class="govuk-table__header">Achievement counts in this sector subject area</th>
+                                  
+                                </tr>
+                              </thead>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Health and Social Care</td>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">79</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Nursing and Subjects and Vocations Allied to Medicine</td>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">136</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Public Services</td>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">38</td>
+                                </tr>
+                                <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell">Child Development and Well Being</td>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">90</td>
+                                </tr>
+                            </table>
                           </div>
                     </div>
                 </div>
@@ -150,30 +288,84 @@ Newcastle upon Tyne | Find data on skills supply
                         <tr class="govuk-table__row">
                           <th scope="col" class="govuk-table__header">Sector subject area</th>
                           <th scope="col" class="govuk-table__header govuk-table__header--numeric">Achievements</th>
-                          <th scope="col" class="govuk-table__header"></th>
                         </tr>
                       </thead>
                       <tbody class="govuk-table__body">
                         <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Health and Social Care</th>
-                          <td class="govuk-table__cell govuk-table__cell--numeric">136</td>
-                          <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Health and Social Care</span></a></td>
+                          <th scope="row" class="govuk-table__header">Health, Public Services and Care</th>
+                          <td class="govuk-table__cell govuk-table__cell--numeric">221</td>
+                          
                         </tr>
                         <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Nursing and Subjects and Vocations Allied to Medicine</th>
-                          <td class="govuk-table__cell govuk-table__cell--numeric">90</td>
-                          <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Nursing and Subjects and Vocations Allied to Medicine</span></a></td>
+                          <th scope="row" class="govuk-table__header">Science and Mathematics</th>
+                          <td class="govuk-table__cell govuk-table__cell--numeric">...</td>
+                         
                         </tr>
                         <tr class="govuk-table__row">
-                          <th scope="row" class="govuk-table__header">Public services</th>
-                          <td class="govuk-table__cell govuk-table__cell--numeric">79</td>
-                          <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Public services</span></a></td>
+                          <th scope="row" class="govuk-table__header">Agriculture, Horticulture and Animal Care</th>
+                          <td class="govuk-table__cell govuk-table__cell--numeric">63</td>
+                         
                         </tr>
                         <tr class="govuk-table__row">
-                            <th scope="row" class="govuk-table__header">Child Development and Well Being</th>
-                            <td class="govuk-table__cell govuk-table__cell--numeric">38</td>
-                            <td class="govuk-table__cell"><a href="#">View breakdown<span class="govuk-visually-hidden"> within Child Development and Well Being</span></a></td>
+                            <th scope="row" class="govuk-table__header">Engineering and Manufacturing Technologies</th>
+                            <td class="govuk-table__cell govuk-table__cell--numeric">221</td>
+                       
                           </tr>
+                          <tr class="govuk-table__row">
+                            <th scope="row" class="govuk-table__header">Construction, Planning and the Built Environment</th>
+                            <td class="govuk-table__cell govuk-table__cell--numeric">...</td>
+                 
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <th scope="row" class="govuk-table__header">Information and Communication Technology (ICT)</th>
+                            <td class="govuk-table__cell govuk-table__cell--numeric">63</td>
+    
+                          </tr>
+                          <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Retail and Commercial Enterprise</th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">221</td>
+    
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Leisure, Travel and Tourism</th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">...</td>
+
+                            </tr>
+                            <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Arts, Media and Publishing</th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">63</td>
+
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">History, Philosophy and Theology</th>
+                                <td class="govuk-table__cell govuk-table__cell--numeric">221</td>
+
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Social Sciences</th>
+                                <td class="govuk-table__cell govuk-table__cell--numeric">...</td>
+
+                              </tr>
+                              <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Languages, Literature and Culture</th>
+                                <td class="govuk-table__cell govuk-table__cell--numeric">63</td>
+          
+                              </tr>
+                              <tr class="govuk-table__row">
+                                  <th scope="row" class="govuk-table__header">Education and Training</th>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">221</td>
+   
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <th scope="row" class="govuk-table__header">Preparation for Life and Work</th>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">...</td>
+   
+                                </tr>
+                                <tr class="govuk-table__row">
+                                  <th scope="row" class="govuk-table__header">Business, Administration, Finance and Law</th>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric">63</td>
+  
+                                </tr>
                       </tbody>
                     </table>
               
@@ -191,7 +383,7 @@ Newcastle upon Tyne | Find data on skills supply
 
          <div class="govuk-grid-row govuk-!-margin-bottom-6">
             <div class="govuk-grid-column-two-thirds">
-              <h2 class="govuk-heading-m  govuk-!-margin-bottom-1">Achievements in Health, Public Services and Care by qualification level in 2017/2018</h2>
+              <h2 class="govuk-heading-m  govuk-!-margin-bottom-1">Achievements by qualification level in 2017/2018</h2>
               <p>The number of qualifications passed at each level</p>
               </div>
 
@@ -226,7 +418,7 @@ Newcastle upon Tyne | Find data on skills supply
                     </div>
                     <div class="govuk-grid-column-one-quarter">
                         <div class="volumetrics-completion-selected">
-                            <span class="summary"><a href="place-newcastle-upon-tyne-level-2-health-public-services-care">Level 2</a></span>
+                            <span class="summary">Level 2</span>
                             <strong>171</strong>
                             <table class="govuk-table small-text-table">
                                 <thead class="govuk-table__head">
@@ -377,12 +569,13 @@ Newcastle upon Tyne | Find data on skills supply
 <div class="govuk-grid-row govuk-!-margin-bottom-6">
     <div class="govuk-grid-column-two-thirds">
         <h2 class="govuk-heading-m">About this data</a></h2>
-        <p>This data comes from the <a href="https://www.gov.uk/government/publications/ilr-specification-validation-rules-and-appendices-2018-to-2019">ESFA Individualised Learner Record</a>. It was last updated at the end of 2017-2018 academic year.</p>
+        <p>This data comes from the <a href="https://www.gov.uk/government/publications/ilr-specification-validation-rules-and-appendices-2018-to-2019">ESFA Individualised Learner Record</a>. It was last updated at the end of 2018-2019 academic year.</p>
         <p>You can use this data publicly.</p>
       </div>
   
 
-
+</div>
+</div>
 </div>
 </div>
 
@@ -392,6 +585,16 @@ Newcastle upon Tyne | Find data on skills supply
 
 {% block pageScripts %}
 
+<script type="text/javascript" >
+  document.getElementById('ssa').addEventListener('change', function () {
+      var style = this.value == '1' ? 'block' : 'none';
+      document.getElementById('conditional-display').style.display = style;
+  });
 
+  document.getElementById('level').addEventListener('change', function () {
+      var style = this.value == '1' ? 'block' : 'none';
+      document.getElementById('conditional-display-2').style.display = style;
+  });
+</script>
 
 {% endblock %}
