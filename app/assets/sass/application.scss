@@ -613,3 +613,9 @@ hr { border: 0; border-top:1px solid #bfc1c3; margin-bottom:20px; }
 .app-page--wide .govuk-header__container {
     margin-bottom: -10px;
 }
+
+/**** FILTER BOX ***/
+
+.dwp-filter { box-shadow: inset 0 0 0 1px #bfc1c3; }
+.dwp-filter__header { background-color: #b1b4b6; padding: 10px 20px; }
+.dwp-filter__content { padding: 10px 20px; }

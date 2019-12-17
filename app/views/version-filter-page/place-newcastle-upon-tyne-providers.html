@@ -1,7 +1,9 @@
-{% extends "layout-wide.html" %}
+{% extends "layout.html" %}
+
+{% set bodyClasses = "app-page--wide" %}
 
 {% block pageTitle %}
-Place name | Find data on skills supply
+Newcastle upon Tyne | Find data on skills supply
 {% endblock %}
 
 {% block content %}
@@ -13,20 +15,18 @@ Place name | Find data on skills supply
   html: 'This is a new service – your feedback will help us to improve it.'
 }) }}
 
-
 <div class="govuk-breadcrumbs">
-        <ol class="govuk-breadcrumbs__list">
-          <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
-          <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-place.html">Places</a></li>
-          <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="place-newcastle-upon-tyne.html">Newcastle upon Tyne</a></li>
-          <li class="govuk-breadcrumbs__list-item" aria-current="page">Training providers</li>
-        </ol>
-      </div>
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-place.html">Places</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Newcastle upon Tyne</li>
+    </ol>
+  </div>
 
-<div class="govuk-grid-row  govuk-!-margin-bottom-6">
+<div class="govuk-grid-row govuk-!-margin-bottom-3">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
-          Providers delivering training in Newcastle upon Tyne
+          Training providers in Newcastle upon Tyne
         </h1>
         <p class="govuk-body-l govuk-!-margin-bottom-3">Local authority district</p>
       <p class="last-update govuk-!-margin-bottom-3">This data was last updated in September 2019</p>
@@ -35,38 +35,173 @@ Place name | Find data on skills supply
 
 
 
-    <div class="govuk-grid-row govuk-!-margin-bottom-5">
 
-        <div class="govuk-grid-column-one-third">
-      
-            <form class="form" action="lep-ne-gva.html">
-                <div class="govuk-form-group">
-                    <label class="govuk-label" for="sort">
-                        <strong>Provider name contains</strong>
-                      </label>
-                      <input class="govuk-input" id="event-name" name="event-name" type="text">
+    <div class="govuk-grid-row  govuk-!-margin-bottom-5">
+        <div class="govuk-grid-column-one-quarter">
+          <div class="dwp-filter">
+            <h3 class="govuk-heading-m govuk-!-margin-bottom-3 dwp-filter__header">Filters</h3>
+
+            <div class="dwp-filter__content">
+
+            <div class="govuk-form-group">
+                <label class="govuk-label govuk-!-font-weight-bold" for="ssa">
+                  Tier 1 sector subject area
+                </label>
+                <select class="govuk-select" id="ssa" name="ssa">
+                  <option value="-" selected>Show all</option>
+                  <option value="1">1 – Health, Public Services and Care</option>
+                  <option value="-">2 – Science and Mathematics</option>
+                  <option value="-">3 – Agriculture, Horticulture and Animal Care</option>
+                  <option value="-">4 – Engineering and Manufacturing Technologies</option>
+                  <option value="-">5 – Construction, Planning and the Built Environment</option>
+                  <option value="-">6 – Information and Communication Technology (ICT)</option>
+                  <option value="-">7 – Retail and Commercial Enterprise</option>
+                  <option value="-">8 – Leisure, Travel and Tourism</option>
+                  <option value="-">9 – Arts, Media and Publishing</option>
+                  <option value="-">10 – History, Philosophy and Theology</option>
+                  <option value="-">11 – Social Sciences</option>
+                  <option value="-">12 – Languages, Literature and Culture</option>
+                  <option value="-">13 – Education and Training</option>
+                  <option value="-">14 – Preparation for Life and Work</option>
+                  <option value="-">15 – Business, Administration, Finance and Law</option>
+                </select>
+              </div>
+
+              <div class="govuk-radios__conditional govuk-select__conditional" id="conditional-display" style="display: none;">
+                  <label class="govuk-label govuk-!-font-weight-bold" for="ssa-2">
+                      Tier 2 sector subject area
+                    </label>
+                  <select class="govuk-select" id="ssa-2" name="ssa-2">
+                      <option value="-" selected>Show all</option>
+                      <option value="1">1.1 – Medicine and dentistry</option>
+                      <option value="-">1.2 – Nursing, and subjects and vocations allied to medicine</option>
+                      <option value="-">1.3 – Health and social care</option>
+                      <option value="-">1.4 – Public services</option>
+                      <option value="-">1.5 – Child development and well being</option>                    
+                  </select>
+              </div>
+
+              <div class="govuk-form-group">
+                  <label class="govuk-label govuk-!-font-weight-bold" for="level">
+                    Qualification level
+                  </label>
+                  <select class="govuk-select" id="level" name="level">
+                    <option value="-" selected>Show all</option>
+                    <option value="-">Entry level</option>
+                    <option value="1">Level 1</option>
+                    <option value="-">Level 2</option>
+                    <option value="-">Level 3</option>
+                    <option value="-">Level 4</option>
+                    <option value="-">Level 5</option>
+                    <option value="-">Level 6</option>
+                    <option value="-">Level 7</option>
+                    <option value="-">Level 8</option>
+                    <option value="-">Level 9</option>
+                    <option value="-">Not applicable</option>
+                  </select>
                 </div>
-            </form>
+
+                <div class="govuk-radios__conditional govuk-select__conditional" id="conditional-display-2" style="display: none;">
+                    <label class="govuk-label govuk-!-font-weight-bold" for="type">
+                        Qualification type
+                      </label>
+                    <select class="govuk-select" id="type" name="type">
+                        <option value="-" selected>Show all</option>
+                        <option value="1">Award</option>
+                        <option value="-">Certificate</option>
+                        <option value="-">Diploma</option>                  
+                    </select>
+                </div>
+
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                            <label class="govuk-label govuk-!-font-weight-bold">
+                            Type of provision
+                          </label>
+                        </legend>
+                        <div class="govuk-checkboxes govuk-checkboxes--small">
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste">
+                              Courses
+                            </label>
+                          </div>
+                          <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                              Apprenticeships
+                            </label>
+                          </div>
+                        </div>
+                      </fieldset>
+                  </div>
+  
+
+                <button class="govuk-button" data-module="govuk-button">
+                    Apply filters
+                  </button>
+
+                </div>
+                </div>
         </div>
 
-        <div class="govuk-grid-column-one-third">
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="sort">
-                    <strong>Provider type</strong>
-                  </label>
-                  <select class="govuk-select" id="sort" name="sort">
-                    <option value="all" selected>All levels</option>
-                    <option>General FE and Tertiary College</option>
-                    <option>Other Public Funded</option>
-                    <option>Private Sector Public Funded</option>
-                    <option>Schools</option>
-                  </select>
+
+        <div class="govuk-grid-column-three-quarters">
+
+
+            <div class="govuk-grid-row govuk-!-margin-bottom-5">
+                <div class="govuk-grid-column-full">
+                    <nav class="navigation-secondary">
+                      <ul>
+                        <li>
+                          <a href="place-newcastle-upon-tyne">Overview</a>
+                        </li>
+                        <li>
+                            <a href="place-newcastle-upon-tyne-courses">Training provision</a>
+                        </li>
+                        <li>
+                          <a href="place-newcastle-upon-tyne-providers" class="active" aria-current="section">Providers</a>
+                      </li>
+            
+                      </ul>
+                    </nav>
+                  </div>
+              </div>  
+
+
+              <div class="govuk-grid-row govuk-!-margin-bottom-5">
+
+                <div class="govuk-grid-column-one-third">
+              
+                    <form class="form" action="lep-ne-gva.html">
+                        <div class="govuk-form-group">
+                            <label class="govuk-label" for="sort">
+                                <strong>Provider name contains</strong>
+                              </label>
+                              <input class="govuk-input" id="event-name" name="event-name" type="text">
+                        </div>
+                    </form>
+                </div>
+        
+                <div class="govuk-grid-column-one-third">
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="sort">
+                            <strong>Provider type</strong>
+                          </label>
+                          <select class="govuk-select" id="sort" name="sort">
+                            <option value="all" selected>All levels</option>
+                            <option>General FE and Tertiary College</option>
+                            <option>Other Public Funded</option>
+                            <option>Private Sector Public Funded</option>
+                            <option>Schools</option>
+                          </select>
+                    </div>
+                 </div>
+        
             </div>
-         </div>
 
-    </div>
-
-      <div class="govuk-grid-row govuk-!-margin-bottom-6">
+            <div class="govuk-grid-row govuk-!-margin-bottom-6">
           <div class="govuk-grid-column-full">
       
       <p class="show-with-responsive-table"><strong>Sort providers by:</strong></p>
@@ -213,6 +348,12 @@ Place name | Find data on skills supply
 
 
 </div>
+
+
+
+
+</div>
+</div>
 </div>
 
 {% include "includes/feedback.html" %}
@@ -221,28 +362,16 @@ Place name | Find data on skills supply
 
 {% block pageScripts %}
 
-<script type="text/javascript">
-  
-  const dataitems = [
-  'Javascript',
-  'React',
-  'CSS',
-  'HTML',
-  'Data science',
-  'Node'
-]
+<script type="text/javascript" >
+  document.getElementById('ssa').addEventListener('change', function () {
+      var style = this.value == '1' ? 'block' : 'none';
+      document.getElementById('conditional-display').style.display = style;
+  });
 
-accessibleAutocomplete({
-  element: document.querySelector('#autocomplete'),
-  displayMenu: 'overlay',
-  id: 'autocomplete', // To match it to the existing <label>.
-  source: dataitems
-})
-
-
+  document.getElementById('level').addEventListener('change', function () {
+      var style = this.value == '1' ? 'block' : 'none';
+      document.getElementById('conditional-display-2').style.display = style;
+  });
 </script>
-
-
-<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
 
 {% endblock %}

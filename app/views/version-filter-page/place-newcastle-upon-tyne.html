@@ -38,11 +38,14 @@ Newcastle upon Tyne | Find data on skills supply
 
     <div class="govuk-grid-row  govuk-!-margin-bottom-5">
         <div class="govuk-grid-column-one-quarter">
-            <h3 class="govuk-heading-m govuk-!-margin-bottom-3">Filters</h3>
+          <div class="dwp-filter">
+            <h3 class="govuk-heading-m govuk-!-margin-bottom-3 dwp-filter__header">Filters</h3>
+
+            <div class="dwp-filter__content">
 
             <div class="govuk-form-group">
                 <label class="govuk-label govuk-!-font-weight-bold" for="ssa">
-                  Sector subject areas (tier 1)
+                  Tier 1 sector subject area
                 </label>
                 <select class="govuk-select" id="ssa" name="ssa">
                   <option value="-" selected>Show all</option>
@@ -66,7 +69,7 @@ Newcastle upon Tyne | Find data on skills supply
 
               <div class="govuk-radios__conditional govuk-select__conditional" id="conditional-display" style="display: none;">
                   <label class="govuk-label govuk-!-font-weight-bold" for="ssa-2">
-                      Sector subject areas (tier 2)
+                      Tier 2 sector subject area
                     </label>
                   <select class="govuk-select" id="ssa-2" name="ssa-2">
                       <option value="-" selected>Show all</option>
@@ -80,7 +83,7 @@ Newcastle upon Tyne | Find data on skills supply
 
               <div class="govuk-form-group">
                   <label class="govuk-label govuk-!-font-weight-bold" for="level">
-                    Qualification levels
+                    Qualification level
                   </label>
                   <select class="govuk-select" id="level" name="level">
                     <option value="-" selected>Show all</option>
@@ -100,7 +103,7 @@ Newcastle upon Tyne | Find data on skills supply
 
                 <div class="govuk-radios__conditional govuk-select__conditional" id="conditional-display-2" style="display: none;">
                     <label class="govuk-label govuk-!-font-weight-bold" for="type">
-                        Qualification types
+                        Qualification type
                       </label>
                     <select class="govuk-select" id="type" name="type">
                         <option value="-" selected>Show all</option>
@@ -139,6 +142,8 @@ Newcastle upon Tyne | Find data on skills supply
                     Apply filters
                   </button>
 
+                </div>
+                </div>
         </div>
 
 
@@ -153,10 +158,10 @@ Newcastle upon Tyne | Find data on skills supply
                           <a href="place-newcastle-upon-tyne" class="active" aria-current="section">Overview</a>
                         </li>
                         <li>
-                            <a href="place-newcastle-upon-tyne-providers">Training provision</a>
+                            <a href="place-newcastle-upon-tyne-courses">Training provision</a>
                         </li>
                         <li>
-                          <a href="place-newcastle-upon-tyne-sectors">Providers</a>
+                          <a href="place-newcastle-upon-tyne-providers">Providers</a>
                       </li>
             
                       </ul>
