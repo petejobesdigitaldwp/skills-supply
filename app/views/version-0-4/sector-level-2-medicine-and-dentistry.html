@@ -1,0 +1,200 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Health, Public Services and Care | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-sector.html">Sector subject areas</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="sector-health-public-services-and-care.html">Health, Public Services and Care</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Medicine and Dentistry</li>
+    </ol>
+  </div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+        Medicine and Dentistry
+    </h1>
+    <p class="last-update govuk-!-margin-bottom-6">This data was last updated in September 2019</p>
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-!-margin-bottom-6">
+  <div class="govuk-grid-column-full">
+      <nav class="navigation-secondary">
+        <ul>
+          <li>
+            <a href="sector-level-2-medicine-and-dentistry" class="active" aria-current="section">Overview</a>
+          </li>
+          <li>
+            <a href="sector-level-2-medicine-and-dentistry-levels">Qualification levels</a>
+        </li>
+        </ul>
+      </nav>
+    </div>
+</div>  
+
+<div class="govuk-grid-row govuk-!-margin-bottom-5">
+  <div class="govuk-grid-column-one-third">
+      <div class="headline-stat-box">
+          <span class="title">Training provisions</span>
+          <span class="figure">4,373</span>
+          <div class="detail">
+              <p><strong>Courses:</strong> 2,862<br><strong>Apprenticeships:</strong> 1,511</p>
+          </div>
+      </div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+      <div class="headline-stat-box">
+          <span class="title">Number of students</span>
+          <span class="figure">96,519</span>
+          <div class="detail">
+              <p><strong>Courses:</strong> 64,182<br><strong>Apprenticeships:</strong> 32,337</p>
+          </div>
+      </div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+      <div class="headline-stat-box">
+          <span class="title">Achievements</span>
+          <span class="figure">218,569</span>
+          <div class="detail">
+              <p><strong>Courses:</strong> 123,109<br><strong>Apprenticeships:</strong> 95,460</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row  govuk-!-margin-bottom-2">
+    <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-m section-border-top">Where training is being delivered</h2>
+      </div>
+      </div>
+
+      <div class="govuk-grid-row  govuk-!-margin-bottom-2">
+      <div class="govuk-grid-column-one-third">
+      
+          <form class="form" action="lep-ne-gva.html">
+              <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                      <strong>Choose a type of provision</strong>
+                    </label>
+                    <select class="govuk-select" id="sort" name="sort">
+                        <option value="all" selected>All provisions</option>
+                        <option>Courses</option>
+                        <option>Apprenticeships</option>
+                      </select>
+              </div>
+          </form>
+      </div>
+      </div>
+
+
+<div class="govuk-grid-row  govuk-!-margin-bottom-5">
+    <div class="govuk-grid-column-full">
+        <div class="govuk-tabs" data-module="govuk-tabs">
+            <div class="govuk-tabs" data-module="tabs">
+                <h2 class="govuk-tabs__title">
+                  Contents
+                </h2>
+              
+                <ul class="govuk-tabs__list">
+                  <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#heatmap">
+                      Heatmap
+                    </a>
+                  </li>
+                  <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#table">
+                      Table of data
+                    </a>
+                  </li>
+                </ul>
+            <section class="govuk-tabs__panel" id="heatmap">
+              
+                <div class="govuk-grid-row">
+                <div class="govuk-grid-column-three-quarters">
+                    <h3 class="govuk-heading-m govuk-!-margin-bottom-3">Heatmap</h3>
+                    <span class="govuk-hint">Select an area on the map to view more information</span>
+                </div>
+                </div>
+
+
+                <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <img src="../../public/images/gb-map.png" class="full-width-image"/>
+                </div>
+                <div class="govuk-grid-column-one-third">
+                    <h3 class="govuk-heading-s"><a href="place-newcastle-upon-tyne-health-public-services-care">Newcastle upon Tyne</a></h3>
+
+                    <div class="govuk-!-margin-bottom-1">
+                        <strong>Training provisions <span class="annotation-figure">481</span></strong>
+                      </div>
+                      <div class="govuk-body-s label extra-annotation-emp">
+                        <p class="govuk-body-s">Courses <span class="annotation-breakdown-figure">369</span></br>Apprenticeships <span class="annotation-breakdown-figure">112</span></p>
+                      </div>
+
+                      <div class="govuk-!-margin-bottom-1">
+                          <strong>Number of students <span class="annotation-figure">2,284</span></strong>
+                        </div>
+                        <div class="govuk-body-s label extra-annotation-emp">
+                          <p class="govuk-body-s">Courses <span class="annotation-breakdown-figure">2,119</span></br>Apprenticeships <span class="annotation-breakdown-figure">165</span></p>
+                        </div>
+
+                        <div class="govuk-!-margin-bottom-1">
+                            <strong>Achievements <span class="annotation-figure">1,763</span></strong>
+                          </div>
+                          <div class="govuk-body-s label extra-annotation-emp">
+                            <p class="govuk-body-s">Courses <span class="annotation-breakdown-figure">2,655</span></br>Apprenticeships <span class="annotation-breakdown-figure">108</span></p>
+                          </div>
+
+                </div>
+            </section>
+            <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="table">
+              
+            </section>
+
+          </div>
+    </div>
+    </div>
+
+</div>
+  
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">About this data</a></h2>
+          <p>This data comes from the <a href="https://www.gov.uk/government/publications/ilr-specification-validation-rules-and-appendices-2018-to-2019">ESFA Individualised Learner Record</a>. It was last updated at the end of 2017-2018 academic year.</p>
+          <p>Detailed information about this data and what we have done with it is contained in the <a href="">methodology</a>.</p>
+          <p>You can use this data publicly.</p>
+          </div>
+      </div>
+    </div>
+
+    {% include "includes/feedback.html" %}
+
+    {% endblock %}
+    
+    {% block pageScripts %}
+    
+    
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}

@@ -1,0 +1,248 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Place name | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+
+<div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+          <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-place.html">Places</a></li>
+          <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="place-newcastle-upon-tyne.html">Newcastle upon Tyne</a></li>
+          <li class="govuk-breadcrumbs__list-item" aria-current="page">Training providers</li>
+        </ol>
+      </div>
+
+<div class="govuk-grid-row  govuk-!-margin-bottom-6">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+          Providers delivering training in Newcastle upon Tyne
+        </h1>
+        <p class="govuk-body-l govuk-!-margin-bottom-3">Local authority district</p>
+      <p class="last-update govuk-!-margin-bottom-3">This data was last updated in September 2019</p>
+      </div>
+    </div>
+
+
+    <div class="govuk-grid-row govuk-!-margin-bottom-6">
+        <div class="govuk-grid-column-full">
+            <nav class="navigation-secondary">
+              <ul>
+                <li>
+                  <a href="place-newcastle-upon-tyne">Overview</a>
+                </li>
+                <li>
+                    <a href="place-newcastle-upon-tyne-provision">Training provision</a>
+                </li>
+                <li>
+                  <a href="place-newcastle-upon-tyne-providers"  class="active" aria-current="section">Providers</a>
+              </li>
+              </ul>
+            </nav>
+          </div>
+      </div>  
+
+
+    <div class="govuk-grid-row govuk-!-margin-bottom-5">
+
+        <div class="govuk-grid-column-one-third">
+      
+            <form class="form" action="lep-ne-gva.html">
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort">
+                        <strong>Provider name contains</strong>
+                      </label>
+                      <input class="govuk-input" id="event-name" name="event-name" type="text">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+      <div class="govuk-grid-row govuk-!-margin-bottom-6">
+          <div class="govuk-grid-column-full">
+      
+      <p class="show-with-responsive-table"><strong>Sort providers by:</strong></p>
+      <table class="govuk-table sort-filter-table sortable responsive-table govuk-!-margin-bottom-5">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+    
+                  <th class="govuk-table__header" scope="col"><span class="th-sort-link">Provider name</span></th>
+                <th class="govuk-table__header" scope="col"><span class="th-sort-link">Participation</span></th>
+                <th class="govuk-table__header" scope="col"><span class="th-sort-link">Achievements</span></th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Best Practice Training and Development Limited</a></th>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="provider-b-skill-newcastle-upon-tyne.html">B-Skill Limited</a></th>
+
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">City of Sunderland College</a></th>
+
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Darlington College</a></th>
+
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Education and services for people with autism limited</a></th>
+
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Gateshead College</a></th>
+
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Interserve Leanring and Employment (Services) Limited</a></th>
+             
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Learndirect Limited</a></th>
+                    
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Learning Curve Group Limited</a></th>
+
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Lomax training services limited</a></th>
+                    
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Nacro</a></th>
+ 
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Newcastle upon Tyne City Council</a></th>
+
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Peopleplus Group Limited</a></th>
+
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Release potential limited</a></th>
+
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">St Helens College</a></th>
+
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Summerhouse Equestrian and Training Centre LLP</a></th>
+
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row"><a href="#">Trinity Post 16 Solutions Limited</a></th>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Participation: </span>1,090</td>
+                    <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>984</td>   
+                </tr>
+    
+    
+              
+                
+    
+                            
+            </tbody>
+          </table>
+            </div>
+       
+
+
+</div>
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+  
+  const dataitems = [
+  'Javascript',
+  'React',
+  'CSS',
+  'HTML',
+  'Data science',
+  'Node'
+]
+
+accessibleAutocomplete({
+  element: document.querySelector('#autocomplete'),
+  displayMenu: 'overlay',
+  id: 'autocomplete', // To match it to the existing <label>.
+  source: dataitems
+})
+
+
+</script>
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}

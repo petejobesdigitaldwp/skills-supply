@@ -1,0 +1,174 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Health, Public Services and Care | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-sector.html">Sector subject areas</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-sector.html">Health, Public Services and Care</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Qualification levels</li>
+    </ol>
+  </div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+        Qualification levels in Health, Public Services and Care
+    </h1>
+    <p class="last-update govuk-!-margin-bottom-6">This data was last updated in September 2019</p>
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-!-margin-bottom-6">
+  <div class="govuk-grid-column-full">
+      <nav class="navigation-secondary">
+        <ul>
+          <li>
+            <a href="sector-health-public-services-care">Overview</a>
+          </li>
+          <li>
+              <a href="sector-health-public-services-care-next-tiers">Tier 2 sector subject areas</a>
+          </li>
+          <li>
+            <a href="sector-health-public-services-care-levels" class="active" aria-current="section">Qualification levels</a>
+        </li>
+        </ul>
+      </nav>
+    </div>
+</div> 
+
+
+<div class="govuk-grid-row  govuk-!-margin-bottom-5">
+    <div class="govuk-grid-column-full">
+      <table class="govuk-table  sort-filter-table sortable responsive-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header"><span class="th-sort-link">Levels</span></th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric"><span class="th-sort-link">Provisions</span></th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric"><span class="th-sort-link">Number of students</span></th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric"><span class="th-sort-link">Achievements</span></th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">Entry level</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Provisions: </span>21</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>387</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>291</td>
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Level 1</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Provisions: </span>21</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>387</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>291</td>
+              </tr>
+
+              <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Level 2</th>
+                  <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Provisions: </span>21</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>387</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>291</td>
+                </tr>
+
+                <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Level 3</th>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Provisions: </span>21</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>387</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>291</td>
+                  </tr>
+
+                  <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Level 4</th>
+                      <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Provisions: </span>21</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>387</td>
+                      <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>291</td>
+                    </tr>
+                
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">Level 5</th>
+                        <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Provisions: </span>21</td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>387</td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>291</td>
+                      </tr>
+
+                      <tr class="govuk-table__row">
+                          <th scope="row" class="govuk-table__header">Level 6</th>
+                          <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Provisions: </span>21</td>
+                          <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>387</td>
+                          <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>291</td>
+                        </tr>
+
+                        <tr class="govuk-table__row">
+                            <th scope="row" class="govuk-table__header">Level 7</th>
+                            <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Provisions: </span>21</td>
+                            <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>387</td>
+                            <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>291</td>
+                          </tr>
+
+                          <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">Level 8</th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Provisions: </span>21</td>
+                              <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>387</td>
+                              <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>291</td>
+                            </tr>
+
+                            <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header">Level 9</th>
+                                <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Provisions: </span>21</td>
+                                <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>387</td>
+                                <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>291</td>
+                              </tr>
+
+                              <tr class="govuk-table__row">
+                                  <th scope="row" class="govuk-table__header">Not applicable</th>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Provisions: </span>21</td>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Number of students: </span>387</td>
+                                  <td class="govuk-table__cell govuk-table__cell--numeric"><span aria-hidden="true" class="show-with-responsive-table">Achievements: </span>291</td>
+                                </tr>
+           
+          </tbody>
+        </table>
+    </div>
+</div>
+
+  
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">About this data</a></h2>
+          <p>This data comes from the <a href="https://www.gov.uk/government/publications/ilr-specification-validation-rules-and-appendices-2018-to-2019">ESFA Individualised Learner Record</a>. It was last updated at the end of 2017-2018 academic year.</p>
+          <p>Detailed information about this data and what we have done with it is contained in the <a href="">methodology</a>.</p>
+          <p>You can use this data publicly.</p>
+          </div>
+      </div>
+    </div>
+
+    {% include "includes/feedback.html" %}
+
+    {% endblock %}
+    
+    {% block pageScripts %}
+    
+    
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}

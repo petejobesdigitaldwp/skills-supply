@@ -1,0 +1,199 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Place name | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+
+<div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+          <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-place.html">Places</a></li>
+          <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="place-newcastle-upon-tyne.html">Newcastle upon Tyne</a></li>
+          <li class="govuk-breadcrumbs__list-item" aria-current="page">Training provisions</li>
+        </ol>
+      </div>
+
+<div class="govuk-grid-row  govuk-!-margin-bottom-6">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+          Training provision in Newcastle upon Tyne
+        </h1>
+        <p class="govuk-body-l govuk-!-margin-bottom-3">Local authority district</p>
+      <p class="last-update govuk-!-margin-bottom-3">This data was last updated in September 2019</p>
+      </div>
+    </div>
+
+
+    <div class="govuk-grid-row govuk-!-margin-bottom-6">
+        <div class="govuk-grid-column-full">
+            <nav class="navigation-secondary">
+              <ul>
+                <li>
+                  <a href="place-newcastle-upon-tyne">Overview</a>
+                </li>
+                <li>
+                    <a href="place-newcastle-upon-tyne-provision" class="active" aria-current="section">Training provision</a>
+                </li>
+                <li>
+                  <a href="place-newcastle-upon-tyne-providers">Providers</a>
+              </li>
+              </ul>
+            </nav>
+          </div>
+      </div> 
+
+
+      <div class="govuk-grid-row govuk-!-margin-bottom-5">
+
+        <div class="govuk-grid-column-one-third">
+      
+            <form class="form" action="lep-ne-gva.html">
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort">
+                        <strong>Title contains</strong>
+                      </label>
+                      <input class="govuk-input" id="event-name" name="event-name" type="text">
+                </div>
+            </form>
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+      
+            <form class="form" action="lep-ne-gva.html">
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="sort">
+                        <strong>Provision type</strong>
+                      </label>
+                      <select class="govuk-select" id="sort" name="sort">
+                          <option value="all" selected>All provisions</option>
+                          <option>Courses</option>
+                          <option>Apprenticeships</option>
+                        </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="sort">
+                    <strong>Qualification level</strong>
+                  </label>
+                  <select class="govuk-select" id="sort" name="sort">
+                    <option value="all" selected>All levels</option>
+                    <option>Level 1</option>
+                    <option>Level 2</option>
+                    <option>Level 3</option>
+                    <option>Level 4</option>
+                    <option>Level 5</option>
+                    <option>Level 6</option>
+                    <option>Level 7</option>
+                    <option>Level 8</option>
+                    <option>Level 9</option>
+                    <option>Not applicable</option>
+                  </select>
+            </div>
+         </div>
+
+    </div>
+
+      <div class="govuk-grid-row govuk-!-margin-bottom-6">
+          <div class="govuk-grid-column-full">
+      
+      <p class="show-with-responsive-table"><strong>Sort providers by:</strong></p>
+      <table class="govuk-table sort-filter-table sortable responsive-table govuk-!-margin-bottom-5">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+
+              <th class="govuk-table__header" scope="col"><span class="th-sort-link">Title</span></th>
+              <th class="govuk-table__header" scope="col"><span class="th-sort-link">Awarding body</span></th>
+              <th class="govuk-table__header" scope="col"><span class="th-sort-link">Qualification leevel</span></th>
+            <th class="govuk-table__header" scope="col"><span class="th-sort-link">Provision type</span></th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row"><a href="#">BTEC Award for IT Users</a></th>
+              <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Awarding body: </span>Pearson</td>    
+              <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification level: </span>1</td>
+              <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provision type: </span>Course</td>  
+            </tr>
+          
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row"><a href="#">Level 2 Adult Care Worker Apprenticeship</a></th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Awarding body: </span>Pearson</td>    
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification level: </span>2</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provision type: </span>Apprenticeship</td>  
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row"><a href="#">BTEC Diploma in Sport (QCF)</a></th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Awarding body: </span>Pearson</td>    
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification level: </span>3</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provision type: </span>Course</td>  
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row"><a href="#">EMTA Sub Dip Engineering Technologies (Rail) FL3</a></th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Awarding body: </span>Pearson</td>    
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification level: </span>-</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provision type: </span>Course</td>  
+              </tr>
+
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row"><a href="#">BTEC Extended Diploma in Construction and the Built Environment (QCF)</a></th>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Awarding body: </span>EDEXCEL</td>    
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Qualification level: </span>3</td>
+                <td class="govuk-table__cell" ><span aria-hidden="true" class="show-with-responsive-table">Provision type: </span>Course</td>  
+              </tr>
+                        
+        </tbody>
+      </table>
+            </div>
+       
+
+
+</div>
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+  
+  const dataitems = [
+  'Javascript',
+  'React',
+  'CSS',
+  'HTML',
+  'Data science',
+  'Node'
+]
+
+accessibleAutocomplete({
+  element: document.querySelector('#autocomplete'),
+  displayMenu: 'overlay',
+  id: 'autocomplete', // To match it to the existing <label>.
+  source: dataitems
+})
+
+
+</script>
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}

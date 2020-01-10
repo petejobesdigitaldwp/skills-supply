@@ -1,0 +1,129 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Health, Public Services and Care | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-breadcrumbs">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-sector.html">Sector subject areas</a></li>
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what-sector.html">Health, Public Services and Care</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Tier 2 sector subject areas</li>
+    </ol>
+  </div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+      Tier 2 sector subject areas in Health, Public Services and Care
+    </h1>
+    <p class="last-update govuk-!-margin-bottom-6">This data was last updated in September 2019</p>
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-!-margin-bottom-6">
+  <div class="govuk-grid-column-full">
+      <nav class="navigation-secondary">
+        <ul>
+          <li>
+            <a href="sector-health-public-services-care">Overview</a>
+          </li>
+          <li>
+              <a href="sector-health-public-services-care-next-tiers" class="active" aria-current="section">Tier 2 sector subject areas</a>
+          </li>
+          <li>
+            <a href="sector-health-public-services-care-levels">Qualification levels</a>
+        </li>
+        </ul>
+      </nav>
+    </div>
+</div> 
+
+<div class="govuk-grid-row  govuk-!-margin-bottom-5">
+    <div class="govuk-grid-column-full">
+      <table class="govuk-table sort-filter-table sortable responsive-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header"><span class="th-sort-link">Sector subject area</span></th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric"><span class="th-sort-link">Provisions</span></th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric"><span class="th-sort-link">Number of students</span></th>
+              <th scope="col" class="govuk-table__header govuk-table__header--numeric"><span class="th-sort-link">Achievements</span></th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="sector-level-2-medicine-and-dentistry">Medicine and dentistry</a></th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">121,098</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">121,098</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">119,027</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="#">Nursing, and subjects and vocations allied to medicine</a></th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">121,098</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">13,080</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">9,826</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="#">Health and social care</a></th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">121,098</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">46,837</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">41,695</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="#">Public services</a></th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">121,098</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">12,918</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">11,006</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"><a href="#">Child development and well being</a></th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">121,098</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">75,645</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">68,275</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">About this data</a></h2>
+          <p>This data comes from the <a href="https://www.gov.uk/government/publications/ilr-specification-validation-rules-and-appendices-2018-to-2019">ESFA Individualised Learner Record</a>. It was last updated at the end of 2017-2018 academic year.</p>
+          <p>Detailed information about this data and what we have done with it is contained in the <a href="">methodology</a>.</p>
+          <p>You can use this data publicly.</p>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+    {% include "includes/feedback.html" %}
+
+    {% endblock %}
+    
+    {% block pageScripts %}
+    
+
+
+
+<script type="text/javascript" src="../../public/javascripts/sorttable.js"></script>
+
+{% endblock %}

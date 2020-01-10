@@ -1,0 +1,96 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  What training provider would you like to find out about? | Find data on skills supply
+{% endblock %}
+
+{% block content %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "alpha"
+  },
+  html: 'This is a new service – your feedback will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item"><a class="govuk-breadcrumbs__link" href="what.html">Home</a></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Training providers</li>
+    </ol>
+  </div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+      <form method="post" class="form" action="provider-b-skill">
+
+        <fieldset class="govuk-fieldset" id="where_fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+            What training provider would you like to find out about?
+            </h1>
+          </legend> 
+          <div class="govuk-form-group">
+            <div id="autocomplete"></div>
+          </div>
+        </fieldset>
+
+        <button class="govuk-button">Continue</button>
+
+    </form>
+    
+     
+  </div>
+</div>
+
+</div>
+
+{% include "includes/feedback.html" %}
+
+{% endblock %}
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+  
+    /*global accessibleAutocomplete*/
+    function customResults (query, matchedResults) {
+      var results = [
+      
+      { areatype: 'Private work based ', name: 'B-Skill Limited' },
+      { areatype: 'Further educations', name: 'South Tyneside College' }
+      
+      ]
+      const checkMatch = results.filter(result => 
+       result.name.toLowerCase().indexOf(query.toLowerCase()) !== -1 // || result.areatype.toLowerCase().indexOf(query.toLowerCase()) !== -1
+      )
+      matchedResults(checkMatch)
+    }
+
+  function inputValueTemplate (result) {
+    return result && result.name
+  }
+
+  function suggestionTemplate (result) {
+    return result && '<span class=\'areaname\'>' + result.name + '</span>' +
+      '<span class=\'areatype\'>' + result.areatype + '</span>'
+  }
+      
+  var element = document.querySelector('#autocomplete');
+  accessibleAutocomplete({
+    element: element,
+    id: 'autocomplete-class',
+    source: customResults,
+    templates: {
+        inputValue: inputValueTemplate,
+        suggestion: suggestionTemplate
+    }
+  });
+
+
+</script>
+
+{% endblock %}
